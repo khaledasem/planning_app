@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include planning_app *.css
+recursive-include planning_app *.csv
+recursive-include planning_app *.html
+recursive-include planning_app *.ico
+recursive-include planning_app *.js
+recursive-include planning_app *.json
+recursive-include planning_app *.md
+recursive-include planning_app *.png
+recursive-include planning_app *.py
+recursive-include planning_app *.svg
+recursive-include planning_app *.txt
+recursive-exclude planning_app *.pyc

@@ -1,0 +1,74 @@
+{
+ "actions": [],
+ "autoname": "field:bsc_name",
+ "creation": "2021-12-01 21:27:30.856434",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "bsc_name",
+  "bsc_ip_adress",
+  "msc_name",
+  "msc_id",
+  "mgw",
+  "vendor"
+ ],
+ "fields": [
+  {
+   "fieldname": "bsc_name",
+   "fieldtype": "Data",
+   "label": "BSC Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "bsc_ip_adress",
+   "fieldtype": "Data",
+   "label": "BSC IP Adress"
+  },
+  {
+   "fieldname": "msc_name",
+   "fieldtype": "Data",
+   "label": "MSC Name"
+  },
+  {
+   "fieldname": "msc_id",
+   "fieldtype": "Data",
+   "label": "MSC ID"
+  },
+  {
+   "fieldname": "mgw",
+   "fieldtype": "Data",
+   "label": "MGW"
+  },
+  {
+   "fieldname": "vendor",
+   "fieldtype": "Select",
+   "label": "Vendor",
+   "options": "\nHW\nZTE"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-02-20 19:22:04.620006",
+ "modified_by": "Administrator",
+ "module": "planning app",
+ "name": "BSCs",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

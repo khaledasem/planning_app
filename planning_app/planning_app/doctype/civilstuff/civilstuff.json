@@ -1,0 +1,55 @@
+{
+ "actions": [],
+ "autoname": "field:name1",
+ "creation": "2021-11-20 00:15:15.888711",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "phone",
+  "email"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "\u0627\u0644\u0627\u0633\u0645",
+   "unique": 1
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "\u0627\u0644\u062a\u0644\u0641\u0648\u0646"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "\u0627\u0644\u0627\u064a\u0645\u064a\u0644"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-02-20 18:24:56.326105",
+ "modified_by": "Administrator",
+ "module": "planning app",
+ "name": "civilstuff",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

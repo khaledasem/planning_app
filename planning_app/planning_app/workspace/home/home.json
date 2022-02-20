@@ -1,0 +1,49 @@
+{
+ "category": "Modules",
+ "charts": [],
+ "creation": "2021-10-02 22:14:22.390537",
+ "developer_mode_only": 0,
+ "disable_user_customization": 1,
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "extends_another_page": 0,
+ "hide_custom": 1,
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "label": "Home",
+ "links": [],
+ "modified": "2022-02-20 18:50:10.176224",
+ "modified_by": "Administrator",
+ "module": "planning app",
+ "name": "Home",
+ "owner": "Administrator",
+ "pin_to_bottom": 0,
+ "pin_to_top": 1,
+ "shortcuts": [
+  {
+   "doc_view": "",
+   "label": "\u0625\u0646\u0634\u0627\u0621 \u0648\u062a\u0639\u062f\u064a\u0644 \u0627\u0644\u0645\u0648\u0627\u0642\u0639 \u0627\u0644\u062c\u062f\u064a\u062f\u0629",
+   "link_to": "NewSites",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "List",
+   "label": "\u0627\u0633\u062a\u0639\u0631\u0627\u0636 \u0627\u0644\u0645\u0648\u0627\u0642\u0639 \u0627\u0644\u062c\u062f\u064a\u062f\u0629",
+   "link_to": "NewSitesReport",
+   "type": "Report"
+  },
+  {
+   "doc_view": "",
+   "label": "\u0625\u0646\u0634\u0627\u0621 \u0648\u062a\u0639\u062f\u064a\u0644 \u0627\u0644\u0645\u0648\u0627\u0642\u0639 \u0627\u0644\u0645\u0645\u0633\u0648\u062d\u0629",
+   "link_to": "SurveySites2",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "List",
+   "label": "\u0627\u0633\u062a\u0639\u0631\u0627\u0636 \u0627\u0644\u0645\u0648\u0627\u0642\u0639 \u0627\u0644\u0645\u0645\u0633\u0648\u062d\u0629",
+   "link_to": "Survey Sites Report",
+   "type": "Report"
+  }
+ ]
+}

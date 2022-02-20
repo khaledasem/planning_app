@@ -1,0 +1,89 @@
+{
+ "actions": [],
+ "autoname": "field:antenna_model",
+ "creation": "2021-12-01 22:06:40.224637",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "antenna_model",
+  "antenna_vendor",
+  "antenna_type_no",
+  "column_break_4",
+  "electric_tilt",
+  "antenna_gaindbi",
+  "column_break_7",
+  "antenna_hor_beamwidh",
+  "antenna_ver_beamwidh"
+ ],
+ "fields": [
+  {
+   "fieldname": "antenna_model",
+   "fieldtype": "Data",
+   "label": "Antenna Model",
+   "unique": 1
+  },
+  {
+   "fieldname": "antenna_vendor",
+   "fieldtype": "Data",
+   "label": "Antenna Vendor"
+  },
+  {
+   "fieldname": "antenna_type_no",
+   "fieldtype": "Data",
+   "label": "Antenna Type No"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "electric_tilt",
+   "fieldtype": "Data",
+   "label": "Electric Tilt"
+  },
+  {
+   "fieldname": "antenna_gaindbi",
+   "fieldtype": "Data",
+   "label": "Antenna Gain(dBi)"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "antenna_hor_beamwidh",
+   "fieldtype": "Data",
+   "label": "Antenna HOR Beamwidh"
+  },
+  {
+   "fieldname": "antenna_ver_beamwidh",
+   "fieldtype": "Data",
+   "label": "Antenna VER Beamwidh"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-02-20 19:23:33.622381",
+ "modified_by": "Administrator",
+ "module": "planning app",
+ "name": "Antenna",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,23 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2021-11-11 19:20:55.748401",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "json": "{}",
+ "modified": "2022-02-20 19:01:14.868379",
+ "modified_by": "Administrator",
+ "module": "planning app",
+ "name": "NewSitesReport",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "NewSites",
+ "report_name": "NewSitesReport",
+ "report_type": "Script Report",
+ "roles": []
+}

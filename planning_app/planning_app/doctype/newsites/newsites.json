@@ -1,0 +1,892 @@
+{
+ "actions": [
+  {
+   "action": "/app/newsites",
+   "action_type": "Route",
+   "label": "NewSites"
+  }
+ ],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:survey_code",
+ "color": "red",
+ "creation": "2021-10-02 22:30:08.428874",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "awaliat_section",
+  "role_user",
+  "survey_type",
+  "column_break_2",
+  "old_sitename",
+  "col_brk_1",
+  "sec_brk1",
+  "site_name",
+  "site_name_arabic",
+  "site_importance",
+  "number_of_choices",
+  "column_break_7",
+  "government2",
+  "modairiah",
+  "area_name",
+  "area_type",
+  "column_break_12",
+  "sun_plate",
+  "survey_code",
+  "zone",
+  "sec_brk_choice1",
+  "tower_type1",
+  "number_of_poles1",
+  "number_of_rooms1",
+  "specify_others1",
+  "sharing_tower_with1",
+  "building_height1",
+  "tower_pole_height1",
+  "tower_type_concat1",
+  "column_break_31",
+  "longitude1",
+  "latitude1",
+  "choice_priority1",
+  "clmn_brk_1",
+  "choice_image1",
+  "show_choice_image1",
+  "sec_brk_choice2",
+  "tower_type2",
+  "tower_type_concat2",
+  "number_of_poles2",
+  "number_of_rooms2",
+  "specify_others2",
+  "sharing_tower_with2",
+  "building_height2",
+  "tower_pole_height2",
+  "column_break_49",
+  "longitude2",
+  "latitude2",
+  "choice_priority2",
+  "column_break_44",
+  "choice_image2",
+  "show_choice_image2",
+  "sec_brk_choice3",
+  "tower_type3",
+  "tower_type_concat3",
+  "number_of_poles3",
+  "number_of_rooms3",
+  "specify_others3",
+  "sharing_tower_with3",
+  "building_height3",
+  "tower_pole_height3",
+  "column_break_63",
+  "longitude3",
+  "latitude3",
+  "choice_priority3",
+  "column_break__",
+  "choice_image3",
+  "show_choice_image3",
+  "sec_brk_choice4",
+  "tower_type4",
+  "tower_type_concat4",
+  "number_of_poles4",
+  "number_of_rooms4",
+  "specify_others4",
+  "sharing_tower_with4",
+  "building_height4",
+  "tower_pole_height4",
+  "column_break_77",
+  "longitude4",
+  "latitude4",
+  "choice_priority4",
+  "column_break_81",
+  "choice_image4",
+  "show_choice_image4",
+  "map_section",
+  "see_in_map",
+  "geolocation_map",
+  "section_break_engineer_info",
+  "engineer_name",
+  "engineer_phone",
+  "survey_date",
+  "clmn_brak_survey_note",
+  "engineer_notes",
+  "evaluate_section",
+  "evaluate",
+  "evaluation_note",
+  "column_break_51",
+  "service_section",
+  "contract_status",
+  "contract_failed_reason",
+  "choice_contracted",
+  "area_contracted",
+  "road_to_site_ready",
+  "elect_generator_place",
+  "elect_generator_area",
+  "column_break_23",
+  "owner_name",
+  "owner_phone",
+  "owner_address",
+  "general_elect_available",
+  "elect_off_time",
+  "column_break_27",
+  "contract_by",
+  "contracted_by_phone",
+  "contract_date",
+  "contract_note",
+  "additional_info_sec",
+  "is_delivered",
+  "is_replaced"
+ ],
+ "fields": [
+  {
+   "fieldname": "awaliat_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "role_user",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "role_user",
+   "set_only_once": 1
+  },
+  {
+   "bold": 1,
+   "fieldname": "survey_type",
+   "fieldtype": "Select",
+   "label": "\u0646\u0648\u0639 \u0627\u0644\u0645\u0633\u062d",
+   "options": "\n\u0645\u0648\u0642\u0639 \u062c\u062f\u064a\u062f\n\u0628\u062f\u064a\u0644 \u0645\u0648\u0642\u0639 \u0641\u064a \u0627\u0644\u062e\u062f\u0645\u0627\u062a\n\u0628\u062f\u064a\u0644 \u0645\u0648\u0642\u0639 \u0641\u064a \u0627\u0644\u0645\u0634\u0627\u0631\u064a\u0639\n\u0628\u062f\u064a\u0644 \u0645\u0648\u0642\u0639 \u0639\u0627\u0645\u0644",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "bold": 1,
+   "fieldname": "old_sitename",
+   "fieldtype": "Link",
+   "label": "\u0625\u0633\u0645 \u0627\u0644\u0645\u0648\u0642\u0639 \u0627\u0644\u0633\u0627\u0628\u0642",
+   "options": "NewSites"
+  },
+  {
+   "fieldname": "col_brk_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sec_brk1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "site_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Site Name",
+   "reqd": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "site_name_arabic",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "\u0627\u0633\u0645 \u0627\u0644\u0645\u0648\u0642\u0639",
+   "reqd": 1
+  },
+  {
+   "fieldname": "site_importance",
+   "fieldtype": "Select",
+   "label": "\u0623\u0647\u0645\u064a\u0629 \u0627\u0644\u0645\u0648\u0642\u0639",
+   "options": "\nA\nB\nC",
+   "reqd": 1
+  },
+  {
+   "fieldname": "number_of_choices",
+   "fieldtype": "Select",
+   "label": "\u0639\u062f\u062f \u0627\u0644\u062e\u064a\u0627\u0631\u0627\u062a",
+   "options": "\n1\n2\n3\n4",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "fetch_if_empty": 1,
+   "fieldname": "government2",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "\u0627\u0644\u0645\u062d\u0627\u0641\u0638\u0629",
+   "options": "govern1",
+   "reqd": 1
+  },
+  {
+   "fieldname": "modairiah",
+   "fieldtype": "Link",
+   "label": "\u0627\u0644\u0645\u062f\u064a\u0631\u064a\u0629",
+   "options": "Modiriat",
+   "reqd": 1
+  },
+  {
+   "fieldname": "area_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u0625\u0633\u0645 \u0627\u0644\u0645\u0646\u0637\u0642\u0629"
+  },
+  {
+   "fieldname": "area_type",
+   "fieldtype": "Select",
+   "label": "Cell Type",
+   "options": "\nUrban\nSuburban\nRural",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sun_plate",
+   "fieldtype": "Select",
+   "label": "\u062e\u0644\u0627\u064a\u0627 \u0634\u0645\u0633\u064a\u0629",
+   "options": "\n\u0646\u0639\u0645\n\u0644\u0627",
+   "reqd": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "survey_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Survey Code",
+   "unique": 1
+  },
+  {
+   "fetch_from": "government2.zone",
+   "fieldname": "zone",
+   "fieldtype": "Read Only",
+   "label": "Zone"
+  },
+  {
+   "bold": 1,
+   "collapsible": 1,
+   "fieldname": "sec_brk_choice1",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "\u0627\u0644\u062e\u064a\u0627\u0631 \u0627\u0644\u0627\u0648\u0644"
+  },
+  {
+   "fieldname": "tower_type1",
+   "fieldtype": "Select",
+   "label": "Support Type",
+   "options": "\nTower\nPole\nRooms+Pole\nSharing\nOthers"
+  },
+  {
+   "fieldname": "number_of_poles1",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Number of Poles",
+   "options": "\n1\n2\n3"
+  },
+  {
+   "fieldname": "number_of_rooms1",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Number of Rooms",
+   "options": "\n1\n2\n3\n4"
+  },
+  {
+   "fieldname": "specify_others1",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Specify"
+  },
+  {
+   "fieldname": "sharing_tower_with1",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Sharing Tower with",
+   "options": "\nPTC\nTV\nMTB\nSapaFon\nY\nOthers"
+  },
+  {
+   "fieldname": "building_height1",
+   "fieldtype": "Data",
+   "label": "Building Height (m)"
+  },
+  {
+   "fieldname": "tower_pole_height1",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Tower Height (m)"
+  },
+  {
+   "fieldname": "tower_type_concat1",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "tower_type_concat1",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_31",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "longitude1",
+   "fieldtype": "Data",
+   "label": "Longitude"
+  },
+  {
+   "fieldname": "latitude1",
+   "fieldtype": "Data",
+   "label": "Latitude"
+  },
+  {
+   "fieldname": "choice_priority1",
+   "fieldtype": "Select",
+   "label": "\u0623\u0641\u0636\u0644\u064a\u0629 \u0627\u0644\u062e\u064a\u0627\u0631",
+   "options": "\n1\n2\n3\n4\n5"
+  },
+  {
+   "fieldname": "clmn_brk_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "choice_image1",
+   "fieldtype": "Attach Image",
+   "label": "\u0627\u0631\u0642\u0642 \u0635\u0648\u0631\u0629 \u0627\u0644\u062e\u064a\u0627\u0631"
+  },
+  {
+   "fieldname": "show_choice_image1",
+   "fieldtype": "Image",
+   "label": "\u0627\u0644\u0635\u0648\u0631\u0629",
+   "options": "choice_image1"
+  },
+  {
+   "bold": 1,
+   "collapsible": 1,
+   "fieldname": "sec_brk_choice2",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "\u0627\u0644\u062e\u064a\u0627\u0631 \u0627\u0644\u062b\u0627\u0646\u064a"
+  },
+  {
+   "fieldname": "tower_type2",
+   "fieldtype": "Select",
+   "label": "Support Type",
+   "options": "\nTower\nPole\nRooms+Pole\nSharing\nOthers"
+  },
+  {
+   "fieldname": "tower_type_concat2",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "number_of_poles2",
+   "fieldtype": "Select",
+   "label": "Number of Poles",
+   "options": "\n1\n2\n3"
+  },
+  {
+   "fieldname": "number_of_rooms2",
+   "fieldtype": "Select",
+   "label": "Number of Rooms",
+   "options": "\n1\n2\n3\n4"
+  },
+  {
+   "fieldname": "specify_others2",
+   "fieldtype": "Data",
+   "label": "Specify"
+  },
+  {
+   "fieldname": "sharing_tower_with2",
+   "fieldtype": "Select",
+   "label": "Sharing Tower with",
+   "options": "\nPTC\nTV\nMTB\nSapaFon\nY\nOthers"
+  },
+  {
+   "fieldname": "building_height2",
+   "fieldtype": "Data",
+   "label": "Building Height (m)"
+  },
+  {
+   "fieldname": "tower_pole_height2",
+   "fieldtype": "Data",
+   "label": "Tower/Pole Height (m)"
+  },
+  {
+   "fieldname": "column_break_49",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "longitude2",
+   "fieldtype": "Data",
+   "label": "Longitude"
+  },
+  {
+   "fieldname": "latitude2",
+   "fieldtype": "Data",
+   "label": "Latitude"
+  },
+  {
+   "fieldname": "choice_priority2",
+   "fieldtype": "Select",
+   "label": "\u0623\u0641\u0636\u0644\u064a\u0629 \u0627\u0644\u062e\u064a\u0627\u0631",
+   "options": "\n1\n2\n3\n4\n5"
+  },
+  {
+   "fieldname": "column_break_44",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "choice_image2",
+   "fieldtype": "Attach Image",
+   "label": "\u0627\u0631\u0641\u0642 \u0635\u0648\u0631\u0629 \u0627\u0644\u062e\u064a\u0627\u0631"
+  },
+  {
+   "fieldname": "show_choice_image2",
+   "fieldtype": "Image",
+   "label": "\u0627\u0644\u0635\u0648\u0631\u0629",
+   "options": "choice_image2"
+  },
+  {
+   "bold": 1,
+   "collapsible": 1,
+   "fieldname": "sec_brk_choice3",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "\u0627\u0644\u062e\u064a\u0627\u0631 \u0627\u0644\u062b\u0627\u0644\u062b"
+  },
+  {
+   "fieldname": "tower_type3",
+   "fieldtype": "Select",
+   "label": "Support Type",
+   "options": "\nTower\nPole\nRooms+Pole\nSharing\nOthers"
+  },
+  {
+   "fieldname": "tower_type_concat3",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "number_of_poles3",
+   "fieldtype": "Select",
+   "label": "Number of Poles",
+   "options": "\n1\n2\n3"
+  },
+  {
+   "fieldname": "number_of_rooms3",
+   "fieldtype": "Select",
+   "label": "Number of Rooms",
+   "options": "\n1\n2\n3\n4"
+  },
+  {
+   "fieldname": "specify_others3",
+   "fieldtype": "Data",
+   "label": "Specify"
+  },
+  {
+   "fieldname": "sharing_tower_with3",
+   "fieldtype": "Select",
+   "label": "Sharing Tower with",
+   "options": "\nPTC\nTV\nMTB\nSapaFon\nY\nOthers"
+  },
+  {
+   "fieldname": "building_height3",
+   "fieldtype": "Data",
+   "label": "Building Height (m)"
+  },
+  {
+   "fieldname": "tower_pole_height3",
+   "fieldtype": "Data",
+   "label": "Tower/Pole Height (m)"
+  },
+  {
+   "fieldname": "column_break_63",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "longitude3",
+   "fieldtype": "Data",
+   "label": "Longitude"
+  },
+  {
+   "fieldname": "latitude3",
+   "fieldtype": "Data",
+   "label": "Latitude"
+  },
+  {
+   "fieldname": "choice_priority3",
+   "fieldtype": "Select",
+   "label": "\u0623\u0641\u0636\u0644\u064a\u0629 \u0627\u0644\u062e\u064a\u0627\u0631",
+   "options": "\n1\n2\n3\n4\n5"
+  },
+  {
+   "fieldname": "column_break__",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "choice_image3",
+   "fieldtype": "Attach Image",
+   "label": "\u0627\u0631\u0641\u0642 \u0635\u0648\u0631\u0629 \u0627\u0644\u062e\u064a\u0627\u0631"
+  },
+  {
+   "fieldname": "show_choice_image3",
+   "fieldtype": "Image",
+   "label": "\u0635\u0648\u0631\u0629 \u0627\u0644\u062e\u064a\u0627\u0631",
+   "options": "choice_image3"
+  },
+  {
+   "bold": 1,
+   "collapsible": 1,
+   "fieldname": "sec_brk_choice4",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "\u0627\u0644\u062e\u064a\u0627\u0631 \u0627\u0644\u0631\u0627\u0628\u0639"
+  },
+  {
+   "fieldname": "tower_type4",
+   "fieldtype": "Select",
+   "label": "Support Type",
+   "options": "\nTower\nPole\nRooms+Pole\nSharing\nOthers"
+  },
+  {
+   "fieldname": "tower_type_concat4",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "number_of_poles4",
+   "fieldtype": "Select",
+   "label": "Number of Poles",
+   "options": "\n1\n2\n3"
+  },
+  {
+   "fieldname": "number_of_rooms4",
+   "fieldtype": "Select",
+   "label": "Number of Rooms",
+   "options": "\n1\n2\n3\n4"
+  },
+  {
+   "fieldname": "specify_others4",
+   "fieldtype": "Data",
+   "label": "Specify"
+  },
+  {
+   "fieldname": "sharing_tower_with4",
+   "fieldtype": "Select",
+   "label": "Sharing Tower with",
+   "options": "\nPTC\nTV\nMTB\nSapaFon\nY\nOthers"
+  },
+  {
+   "fieldname": "building_height4",
+   "fieldtype": "Data",
+   "label": "Building Height (m)"
+  },
+  {
+   "fieldname": "tower_pole_height4",
+   "fieldtype": "Data",
+   "label": "Tower/Pole Height (m)"
+  },
+  {
+   "fieldname": "column_break_77",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "longitude4",
+   "fieldtype": "Data",
+   "label": "Longitude"
+  },
+  {
+   "fieldname": "latitude4",
+   "fieldtype": "Data",
+   "label": "Latitude"
+  },
+  {
+   "fieldname": "choice_priority4",
+   "fieldtype": "Select",
+   "label": "\u0623\u0641\u0636\u0644\u064a\u0629 \u0627\u0644\u062e\u064a\u0627\u0631",
+   "options": "\n1\n2\n3\n4\n5"
+  },
+  {
+   "fieldname": "column_break_81",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "choice_image4",
+   "fieldtype": "Attach Image",
+   "label": "\u0627\u0631\u0642\u0642 \u0635\u0648\u0631\u0629 \u0627\u0644\u062e\u064a\u0627\u0631"
+  },
+  {
+   "fieldname": "show_choice_image4",
+   "fieldtype": "Image",
+   "label": "\u0627\u0644\u0635\u0648\u0631\u0629",
+   "options": "choice_image4"
+  },
+  {
+   "fieldname": "map_section",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Map"
+  },
+  {
+   "default": "No",
+   "fieldname": "see_in_map",
+   "fieldtype": "Select",
+   "label": "See in Map",
+   "options": "No\nYes"
+  },
+  {
+   "fieldname": "geolocation_map",
+   "fieldtype": "Geolocation",
+   "hidden": 1,
+   "label": "Map"
+  },
+  {
+   "fieldname": "section_break_engineer_info",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "engineer_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "\u0627\u0633\u0645 \u0627\u0644\u0645\u0647\u0646\u062f\u0633",
+   "options": "engineer"
+  },
+  {
+   "fieldname": "engineer_phone",
+   "fieldtype": "Data",
+   "label": "\u062a\u0644\u0641\u0648\u0646 \u0627\u0644\u0645\u0647\u0646\u062f\u0633"
+  },
+  {
+   "default": "Today",
+   "fieldname": "survey_date",
+   "fieldtype": "Date",
+   "label": "\u062a\u0627\u0631\u064a\u062e \u0627\u0644\u0645\u0633\u062d"
+  },
+  {
+   "fieldname": "clmn_brak_survey_note",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "engineer_notes",
+   "fieldtype": "Small Text",
+   "label": "\u0645\u0644\u0627\u062d\u0638\u0627\u062a \u0627\u0644\u0645\u0647\u0646\u062f\u0633"
+  },
+  {
+   "bold": 1,
+   "collapsible": 1,
+   "fieldname": "evaluate_section",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "\u0645\u0631\u0627\u062c\u0639\u0629 \u0631\u0626\u064a\u0633 \u0627\u0644\u0642\u0633\u0645"
+  },
+  {
+   "fieldname": "evaluate",
+   "fieldtype": "Select",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "\u062a\u0642\u064a\u064a\u0645 \u0631\u0626\u064a\u0633 \u0627\u0644\u0642\u0633\u0645",
+   "options": "\nOK\nResurvey",
+   "read_only": 1
+  },
+  {
+   "fieldname": "evaluation_note",
+   "fieldtype": "Small Text",
+   "in_filter": 1,
+   "label": "\u0645\u0644\u0627\u062d\u0638\u0627\u062a \u0644\u0644\u0645\u0631\u0627\u062c\u0639\u0629",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_51",
+   "fieldtype": "Column Break"
+  },
+  {
+   "bold": 1,
+   "collapsible": 1,
+   "fieldname": "service_section",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "\u0627\u0644\u062e\u062f\u0645\u0627\u062a"
+  },
+  {
+   "fieldname": "contract_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "\u062d\u0627\u0644\u0629 \u0627\u0644\u0639\u0642\u062f",
+   "options": "\n\u062a\u0645 \u062a\u0648\u0642\u064a\u0639 \u0627\u0644\u0639\u0642\u062f\n\u062c\u0627\u0631\u064a \u0627\u0644\u062a\u0641\u0627\u0648\u0636\n\u0641\u0634\u0644 \u0627\u0644\u062a\u0641\u0627\u0648\u0636"
+  },
+  {
+   "fieldname": "contract_failed_reason",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "\u0633\u0628\u0628 \u0641\u0634\u0644 \u0627\u0644\u062a\u0641\u0627\u0648\u0636"
+  },
+  {
+   "fieldname": "choice_contracted",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "\u0631\u0642\u0645 \u0627\u0644\u062e\u064a\u0627\u0631 \u0627\u0644\u0645\u062a\u0639\u0627\u0642\u062f \u0639\u0644\u064a\u0629"
+  },
+  {
+   "fieldname": "area_contracted",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "\u0627\u0644\u0645\u0633\u0627\u062d\u0647  \u0627\u0644\u0645\u062a\u0639\u0627\u0642\u062f \u0639\u0644\u064a\u0647\u0627"
+  },
+  {
+   "fieldname": "road_to_site_ready",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "\u062c\u0627\u0647\u0632\u064a\u0629 \u0627\u0644\u0637\u0631\u064a\u0642 \u0644\u0644\u0645\u0648\u0642\u0639",
+   "options": "\n\u0646\u0639\u0645\n\u0644\u0627"
+  },
+  {
+   "fieldname": "elect_generator_place",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "\u0645\u0643\u0627\u0646 \u0627\u0644\u0645\u0648\u0644\u062f"
+  },
+  {
+   "fieldname": "elect_generator_area",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "\u0627\u0644\u0645\u0633\u0627\u062d\u0629 \u0627\u0644\u0645\u062a\u0648\u0641\u0631\u0629 \u0644\u0644\u0645\u0648\u0644\u062f"
+  },
+  {
+   "fieldname": "column_break_23",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "owner_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u0625\u0633\u0645 \u0627\u0644\u0645\u0627\u0644\u0643"
+  },
+  {
+   "fieldname": "owner_phone",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u0631\u0642\u0645 \u0627\u0644\u0645\u0627\u0644\u0643"
+  },
+  {
+   "fieldname": "owner_address",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u0639\u0646\u0648\u0627\u0646 \u0627\u0644\u0645\u0627\u0644\u0643"
+  },
+  {
+   "fieldname": "general_elect_available",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "\u062a\u0648\u0641\u0631 \u0643\u0647\u0631\u0628\u0627\u0621 \u0639\u0645\u0648\u0645\u064a\u0629 ",
+   "options": "\n\u0644\u0627\n\u0646\u0639\u0645"
+  },
+  {
+   "fieldname": "elect_off_time",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "\u0639\u062f\u062f \u0633\u0627\u0639\u0627\u062a \u0627\u0644\u0627\u0646\u0637\u0641\u0627\u0621"
+  },
+  {
+   "fieldname": "column_break_27",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "contract_by",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "\u0625\u0633\u0645 \u0627\u0644\u0645\u062a\u0639\u0627\u0642\u062f",
+   "options": "contractor"
+  },
+  {
+   "fieldname": "contracted_by_phone",
+   "fieldtype": "Data",
+   "label": "\u0631\u0642\u0645 \u0627\u0644\u0645\u062a\u0639\u0627\u0642\u062f"
+  },
+  {
+   "fieldname": "contract_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "\u062a\u0627\u0631\u064a\u062e \u0627\u0644\u062a\u0639\u0627\u0642\u062f"
+  },
+  {
+   "fieldname": "contract_note",
+   "fieldtype": "Small Text",
+   "label": "\u0645\u0644\u0627\u062d\u0638\u0629 \u0627\u0644\u0645\u062a\u0639\u0627\u0642\u062f"
+  },
+  {
+   "fieldname": "additional_info_sec",
+   "fieldtype": "Section Break",
+   "label": "\u0628\u064a\u0627\u0646\u0627\u062a \u0625\u0636\u0627\u0641\u064a\u0629"
+  },
+  {
+   "default": "No",
+   "fieldname": "is_delivered",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "\u0647\u0644 \u062a\u0645 \u062a\u0633\u0644\u064a\u0645 \u0627\u0644\u0645\u0648\u0642\u0639",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "is_replaced",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "\u0647\u0644 \u062a\u0645 \u0645\u0633\u062d \u0628\u062f\u064a\u0644",
+   "options": "\nYes",
+   "read_only": 1
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-02-20 17:57:41.693793",
+ "modified_by": "Administrator",
+ "module": "planning app",
+ "name": "NewSites",
+ "name_case": "Title Case",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "ServicesRole",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "site_name,site_name_arabic",
+ "show_name_in_global_search": 1,
+ "show_preview_popup": 1,
+ "sort_field": "modified",
+ "sort_order": "ASC",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

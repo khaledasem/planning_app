@@ -1,0 +1,1184 @@
+{
+ "actions": [
+  {
+   "action": "/app/newsites",
+   "action_type": "Route",
+   "label": "NewSites"
+  }
+ ],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:survey_code",
+ "color": "red",
+ "creation": "2021-11-24 21:49:07.249858",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "awaliat_section",
+  "construction_type",
+  "clmn_brk_1",
+  "contracted_sitename",
+  "site_name_reconstruct",
+  "col_brk_1",
+  "clmn_brk_2",
+  "site_data_section",
+  "site_name",
+  "site_name_arabic",
+  "site_importance",
+  "longitude",
+  "column_break_7",
+  "government2",
+  "modairiah",
+  "area_name",
+  "latitude",
+  "column_break_12",
+  "sun_plate",
+  "survey_code",
+  "zone",
+  "area_type",
+  "engineer_data_section",
+  "engineer_name",
+  "engineer_phone",
+  "survey_date",
+  "column_break_26",
+  "delivered_to_name",
+  "delivered_to_phone",
+  "delivery_date",
+  "clmn_br_survey_date",
+  "engineer_notes",
+  "another_operators_in_location_section",
+  "ptc_check",
+  "ptc_clmn_brk",
+  "sapafon_check",
+  "sapafon_brk",
+  "mtn_check",
+  "mtn_clmn_brk",
+  "y_check",
+  "another_operator_clmn_brk",
+  "company_in_the_site",
+  "antenna_support_section",
+  "tower_type",
+  "specify_others",
+  "number_of_poles",
+  "number_of_rooms",
+  "sharing_tower_with",
+  "building_height",
+  "clmn_brk_tower_height",
+  "tower_pole_height",
+  "tower_type_concat",
+  "site_config_section",
+  "clmn_brk_1_",
+  "bsc_name",
+  "bts_vendor",
+  "lac",
+  "clmn_brk22",
+  "transmission_type",
+  "nearest_link_site",
+  "nearest_link_site_name",
+  "do_cnfg_concat",
+  "x_cnfg_concat",
+  "sec_brk_enb_cfg",
+  "enb_vendor",
+  "clmn_brk_epc3",
+  "epc_name",
+  "clmn_brk_epc",
+  "tac",
+  "clmn_brk_epc4",
+  "mimo",
+  "clmn_brk_epc2",
+  "planned__lte_bands",
+  "number_of_sectoin",
+  "number_of_sectors",
+  "sec_brk_sector1",
+  "azimuth1",
+  "antenna_type1",
+  "x_cnfg1",
+  "clmn_brk_",
+  "tilt1",
+  "antenna_hbw1",
+  "do_cnfg1",
+  "clmn_brk__",
+  "antenna_height1",
+  "antenna_vbw1",
+  "sec_brk_sector2",
+  "azimuth2",
+  "antenna_type2",
+  "x_cnfg2",
+  "clmn__brk1",
+  "tilt2",
+  "antenna_hbw2",
+  "do_cnfg2",
+  "clmn___brk2",
+  "antenna_height2",
+  "antenna_vbw2",
+  "sec_brk_sector3",
+  "azimuth3",
+  "antenna_type3",
+  "x_cnfg3",
+  "clmn__brk2",
+  "tilt3",
+  "antenna_hbw3",
+  "do_cnfg3",
+  "clmn___brk3",
+  "antenna_height3",
+  "antenna_vbw3",
+  "sec_brk_sector4",
+  "azimuth4",
+  "antenna_type4",
+  "x_cnfg4",
+  "clmn__brk4",
+  "tilt4",
+  "antenna_hbw4",
+  "do_cnfg4",
+  "clmn___brk4",
+  "antenna_height4",
+  "antenna_vbw4",
+  "map_section",
+  "see_in_map",
+  "geolocation_map",
+  "evaluate_section",
+  "evaluate",
+  "column_break_51",
+  "evaluation_note",
+  "service_section",
+  "contract_status",
+  "choice_contracted",
+  "area_contracted",
+  "road_to_site_ready",
+  "elect_generator_place",
+  "elect_generator_area",
+  "contract_failed_reason",
+  "column_break_23",
+  "owner_name",
+  "owner_phone",
+  "owner_address",
+  "general_elect_available",
+  "elect_off_time",
+  "column_break_27",
+  "contract_by",
+  "contracted_by_phone",
+  "contract_date",
+  "contract_note",
+  "sec_brk_construction",
+  "constr_site_status",
+  "miqawil_name",
+  "civil_problem_detailes",
+  "civil_clmn_brk",
+  "civil_notes",
+  "concat_section",
+  "azimuth_concat",
+  "tilt_concat",
+  "antenna_height_concat",
+  "antenna_hbw_concat",
+  "antenna_vbw_concat",
+  "ext_section",
+  "is_replaced",
+  "clmn__brr",
+  "is_launched",
+  "launch_date",
+  "ccclmnbrk",
+  "plan_year",
+  "plan_quarter"
+ ],
+ "fields": [
+  {
+   "fieldname": "awaliat_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "construction_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "\u0646\u0648\u0639 \u0627\u0644\u0625\u0646\u0634\u0627\u0621",
+   "options": "\n\u062c\u062f\u064a\u062f\n\u0625\u0639\u0627\u062f\u0629 \u062a\u0623\u0647\u064a\u0644",
+   "reqd": 1
+  },
+  {
+   "fieldname": "clmn_brk_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "bold": 1,
+   "fieldname": "contracted_sitename",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "\u0625\u0633\u0645 \u0627\u0644\u0645\u0648\u0642\u0639 \u0627\u0644\u0645\u062a\u0639\u0627\u0642\u062f \u0639\u0644\u064a\u0629",
+   "options": "NewSites"
+  },
+  {
+   "fieldname": "site_name_reconstruct",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "\u0627\u0633\u0645 \u0627\u0644\u0645\u0648\u0642\u0639 \u0627\u0644\u0645\u0631\u0627\u062f \u0625\u0639\u0627\u062f\u0629 \u062a\u0623\u0647\u064a\u0644\u0629",
+   "options": "Working Sites"
+  },
+  {
+   "fieldname": "col_brk_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "clmn_brk_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "site_data_section",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "site_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Site Name",
+   "reqd": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "site_name_arabic",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "\u0627\u0633\u0645 \u0627\u0644\u0645\u0648\u0642\u0639",
+   "reqd": 1
+  },
+  {
+   "fieldname": "site_importance",
+   "fieldtype": "Select",
+   "label": "\u0623\u0647\u0645\u064a\u0629 \u0627\u0644\u0645\u0648\u0642\u0639",
+   "options": "\nA\nB\nC",
+   "reqd": 1
+  },
+  {
+   "fieldname": "longitude",
+   "fieldtype": "Data",
+   "label": "Longitude",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "fetch_if_empty": 1,
+   "fieldname": "government2",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "\u0627\u0644\u0645\u062d\u0627\u0641\u0638\u0629",
+   "options": "govern1",
+   "reqd": 1
+  },
+  {
+   "fieldname": "modairiah",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "\u0627\u0644\u0645\u062f\u064a\u0631\u064a\u0629",
+   "options": "Modiriat",
+   "reqd": 1
+  },
+  {
+   "fieldname": "area_name",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "\u0627\u0644\u0645\u0646\u0637\u0642\u0629",
+   "reqd": 1
+  },
+  {
+   "fieldname": "latitude",
+   "fieldtype": "Data",
+   "label": "Latitude",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sun_plate",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "\u062e\u0644\u0627\u064a\u0627 \u0634\u0645\u0633\u064a\u0629",
+   "options": "\n\u0646\u0639\u0645\n\u0644\u0627",
+   "reqd": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "survey_code",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "label": "Survey Code",
+   "unique": 1
+  },
+  {
+   "fetch_from": "government2.zone",
+   "fieldname": "zone",
+   "fieldtype": "Read Only",
+   "label": "Zone"
+  },
+  {
+   "fieldname": "area_type",
+   "fieldtype": "Select",
+   "label": "Cell Type",
+   "options": "\nUrban\nSuburban\nRural",
+   "reqd": 1
+  },
+  {
+   "fieldname": "engineer_data_section",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "engineer_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "\u0627\u0633\u0645 \u0645\u0647\u0646\u062f\u0633 \u0627\u0644\u062a\u062e\u0637\u064a\u0637",
+   "options": "engineer"
+  },
+  {
+   "fetch_from": "engineer_name.phone",
+   "fieldname": "engineer_phone",
+   "fieldtype": "Read Only",
+   "hidden": 1,
+   "label": "\u062a\u0644\u0641\u0648\u0646 \u0645\u0647\u0646\u062f\u0633 \u0627\u0644\u062a\u062e\u0637\u064a\u0637"
+  },
+  {
+   "columns": 1,
+   "default": "Today",
+   "fieldname": "survey_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "\u062a\u0627\u0631\u064a\u062e \u0627\u0644\u0645\u0633\u062d"
+  },
+  {
+   "fieldname": "column_break_26",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "delivered_to_name",
+   "fieldtype": "Link",
+   "label": "\u0627\u0633\u0645  \u0627\u0644\u0645\u0633\u062a\u0644\u0645 \u0645\u0646 \u0627\u0644\u0645\u0634\u0627\u0631\u064a\u0639",
+   "options": "civilstuff",
+   "reqd": 1
+  },
+  {
+   "fieldname": "delivered_to_phone",
+   "fieldtype": "Data",
+   "label": "\u062a\u0644\u0641\u0648\u0646 \u0627\u0644\u0645\u0633\u062a\u0644\u0645"
+  },
+  {
+   "default": "Today",
+   "fieldname": "delivery_date",
+   "fieldtype": "Date",
+   "label": "\u062a\u0627\u0631\u064a\u062e \u0627\u0644\u062a\u0633\u0644\u064a\u0645"
+  },
+  {
+   "fieldname": "clmn_br_survey_date",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "engineer_notes",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "\u0645\u0644\u0627\u062d\u0638\u0627\u062a \u0645\u0647\u0646\u062f\u0633 \u0627\u0644\u062a\u062e\u0637\u064a\u0637"
+  },
+  {
+   "fieldname": "another_operators_in_location_section",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Another Operators in the same location"
+  },
+  {
+   "default": "0",
+   "fieldname": "ptc_check",
+   "fieldtype": "Check",
+   "label": "PTC"
+  },
+  {
+   "fieldname": "ptc_clmn_brk",
+   "fieldtype": "Column Break",
+   "width": "1"
+  },
+  {
+   "default": "0",
+   "fieldname": "sapafon_check",
+   "fieldtype": "Check",
+   "label": "SapaFon"
+  },
+  {
+   "fieldname": "sapafon_brk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "mtn_check",
+   "fieldtype": "Check",
+   "label": "MTN"
+  },
+  {
+   "fieldname": "mtn_clmn_brk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "y_check",
+   "fieldtype": "Check",
+   "label": "Y tel"
+  },
+  {
+   "fieldname": "another_operator_clmn_brk",
+   "fieldtype": "Column Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "company_in_the_site",
+   "fieldtype": "Read Only",
+   "label": "Another Operators"
+  },
+  {
+   "fieldname": "antenna_support_section",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Antenna Support "
+  },
+  {
+   "fieldname": "tower_type",
+   "fieldtype": "Select",
+   "label": "Support Type",
+   "options": "\nTower\nPole\nRooms+Pole\nSharing\nOthers",
+   "reqd": 1
+  },
+  {
+   "fieldname": "specify_others",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Specify"
+  },
+  {
+   "fieldname": "number_of_poles",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Number of Poles",
+   "options": "\n1\n2\n3"
+  },
+  {
+   "fieldname": "number_of_rooms",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Number of Rooms",
+   "options": "\n1\n2\n3\n4"
+  },
+  {
+   "fieldname": "sharing_tower_with",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Sharing Tower with",
+   "options": "\nPTC\nTV\nMTB\nSapaFon\nY\nOthers"
+  },
+  {
+   "fieldname": "building_height",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Building Height (m)"
+  },
+  {
+   "fieldname": "clmn_brk_tower_height",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tower_pole_height",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Tower/Pole Height (m)"
+  },
+  {
+   "fieldname": "tower_type_concat",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Tower Type"
+  },
+  {
+   "fieldname": "site_config_section",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "clmn_brk_1_",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bsc_name",
+   "fieldtype": "Link",
+   "label": "BSC Name",
+   "options": "BSCs",
+   "reqd": 1
+  },
+  {
+   "fieldname": "bts_vendor",
+   "fieldtype": "Read Only",
+   "label": "BTS Vendor",
+   "reqd": 1
+  },
+  {
+   "default": "  ",
+   "fieldname": "lac",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "LAC"
+  },
+  {
+   "fieldname": "clmn_brk22",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "transmission_type",
+   "fieldtype": "Select",
+   "label": "Transmission Type",
+   "options": "\nFiber\nMicrowave",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nearest_link_site",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Nearest Link Site",
+   "options": "Working Sites"
+  },
+  {
+   "fieldname": "nearest_link_site_name",
+   "fieldtype": "Data",
+   "label": "Nearest LinkSite Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "do_cnfg_concat",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "do_cnfg_concat",
+   "read_only": 1
+  },
+  {
+   "fieldname": "x_cnfg_concat",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "x_cnfg_concat"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "sec_brk_enb_cfg",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "eNB CFG"
+  },
+  {
+   "fieldname": "enb_vendor",
+   "fieldtype": "Select",
+   "label": "eNB Vendor",
+   "options": "\nHW\nZTE"
+  },
+  {
+   "fieldname": "clmn_brk_epc3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "epc_name",
+   "fieldtype": "Data",
+   "label": "EPC Name"
+  },
+  {
+   "fieldname": "clmn_brk_epc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tac",
+   "fieldtype": "Data",
+   "label": "TAC"
+  },
+  {
+   "fieldname": "clmn_brk_epc4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mimo",
+   "fieldtype": "Select",
+   "label": "MIMO",
+   "options": "\n2*2\n4*4\n8*8"
+  },
+  {
+   "fieldname": "clmn_brk_epc2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "planned__lte_bands",
+   "fieldtype": "Select",
+   "label": "Planned  LTE Bands",
+   "options": "\n800\n1800\n1800&800"
+  },
+  {
+   "fieldname": "number_of_sectoin",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "number_of_sectors",
+   "fieldtype": "Select",
+   "label": "Number of Sectors",
+   "options": "\n1\n2\n3\n4",
+   "reqd": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "sec_brk_sector1",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Sector 0"
+  },
+  {
+   "fieldname": "azimuth1",
+   "fieldtype": "Data",
+   "label": "Azimuth"
+  },
+  {
+   "fieldname": "antenna_type1",
+   "fieldtype": "Link",
+   "label": "Antenna Type",
+   "options": "Antenna"
+  },
+  {
+   "fieldname": "x_cnfg1",
+   "fieldtype": "Select",
+   "label": "1x Cnfg.",
+   "options": "\n6\n5\n4\n3\n2\n1"
+  },
+  {
+   "fieldname": "clmn_brk_",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tilt1",
+   "fieldtype": "Data",
+   "label": "Tilt"
+  },
+  {
+   "fieldname": "antenna_hbw1",
+   "fieldtype": "Read Only",
+   "label": "Antenna HBW"
+  },
+  {
+   "fieldname": "do_cnfg1",
+   "fieldtype": "Select",
+   "label": "DO Cnfg.",
+   "options": "\n6\n5\n4\n3\n2\n1"
+  },
+  {
+   "fieldname": "clmn_brk__",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "antenna_height1",
+   "fieldtype": "Data",
+   "label": "Antenna Height (m)"
+  },
+  {
+   "fieldname": "antenna_vbw1",
+   "fieldtype": "Read Only",
+   "label": "Antenna VBW"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "sec_brk_sector2",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Sector 1"
+  },
+  {
+   "fieldname": "azimuth2",
+   "fieldtype": "Data",
+   "label": "Azimuth"
+  },
+  {
+   "fieldname": "antenna_type2",
+   "fieldtype": "Link",
+   "label": "Antenna Type",
+   "options": "Antenna"
+  },
+  {
+   "fieldname": "x_cnfg2",
+   "fieldtype": "Select",
+   "label": "1x Cnfg.",
+   "options": "\n6\n5\n4\n3\n2\n1"
+  },
+  {
+   "fieldname": "clmn__brk1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tilt2",
+   "fieldtype": "Data",
+   "label": "Tilt"
+  },
+  {
+   "fieldname": "antenna_hbw2",
+   "fieldtype": "Read Only",
+   "label": "Antenna HBW"
+  },
+  {
+   "fieldname": "do_cnfg2",
+   "fieldtype": "Select",
+   "label": "DO Cnfg.",
+   "options": "\n6\n5\n4\n3\n2\n1"
+  },
+  {
+   "fieldname": "clmn___brk2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "antenna_height2",
+   "fieldtype": "Data",
+   "label": "Antenna Height (m)"
+  },
+  {
+   "fieldname": "antenna_vbw2",
+   "fieldtype": "Read Only",
+   "label": "Antenna VBW"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "sec_brk_sector3",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Sector 2"
+  },
+  {
+   "fieldname": "azimuth3",
+   "fieldtype": "Data",
+   "label": "Azimuth"
+  },
+  {
+   "fieldname": "antenna_type3",
+   "fieldtype": "Link",
+   "label": "Antenna Type",
+   "options": "Antenna"
+  },
+  {
+   "fieldname": "x_cnfg3",
+   "fieldtype": "Select",
+   "label": "1x Cnfg.",
+   "options": "\n6\n5\n4\n3\n2\n1"
+  },
+  {
+   "fieldname": "clmn__brk2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tilt3",
+   "fieldtype": "Data",
+   "label": "Tilt"
+  },
+  {
+   "fieldname": "antenna_hbw3",
+   "fieldtype": "Read Only",
+   "label": "Antenna HBW"
+  },
+  {
+   "fieldname": "do_cnfg3",
+   "fieldtype": "Select",
+   "label": "DO Cnfg.",
+   "options": "\n6\n5\n4\n3\n2\n1"
+  },
+  {
+   "fieldname": "clmn___brk3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "antenna_height3",
+   "fieldtype": "Data",
+   "label": "Antenna Height (m)"
+  },
+  {
+   "fieldname": "antenna_vbw3",
+   "fieldtype": "Read Only",
+   "label": "Antenna VBW"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "sec_brk_sector4",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Sector 3"
+  },
+  {
+   "fieldname": "azimuth4",
+   "fieldtype": "Data",
+   "label": "Azimuth"
+  },
+  {
+   "fieldname": "antenna_type4",
+   "fieldtype": "Link",
+   "label": "Antenna Type",
+   "options": "Antenna"
+  },
+  {
+   "fieldname": "x_cnfg4",
+   "fieldtype": "Select",
+   "label": "1x Cnfg.",
+   "options": "\n6\n5\n4\n3\n2\n1"
+  },
+  {
+   "fieldname": "clmn__brk4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tilt4",
+   "fieldtype": "Data",
+   "label": "Tilt"
+  },
+  {
+   "fieldname": "antenna_hbw4",
+   "fieldtype": "Read Only",
+   "label": "Antenna HBW"
+  },
+  {
+   "fieldname": "do_cnfg4",
+   "fieldtype": "Select",
+   "label": "DO Cnfg.",
+   "options": "\n6\n5\n4\n3\n2\n1"
+  },
+  {
+   "fieldname": "clmn___brk4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "antenna_height4",
+   "fieldtype": "Data",
+   "label": "Antenna Height (m)"
+  },
+  {
+   "fieldname": "antenna_vbw4",
+   "fieldtype": "Read Only",
+   "label": "Antenna VBW"
+  },
+  {
+   "fieldname": "map_section",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Map"
+  },
+  {
+   "default": "No",
+   "fieldname": "see_in_map",
+   "fieldtype": "Select",
+   "label": "See in Map",
+   "options": "No\nYes"
+  },
+  {
+   "fieldname": "geolocation_map",
+   "fieldtype": "Geolocation",
+   "hidden": 1,
+   "label": "Map"
+  },
+  {
+   "bold": 1,
+   "collapsible": 1,
+   "fieldname": "evaluate_section",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "\u0645\u0631\u0627\u062c\u0639\u0629 \u0631\u0626\u064a\u0633 \u0627\u0644\u0642\u0633\u0645"
+  },
+  {
+   "fieldname": "evaluate",
+   "fieldtype": "Select",
+   "label": "\u062a\u0642\u064a\u064a\u0645 \u0627\u0644\u0631\u0641\u0639",
+   "options": "\nOK\nResurvey"
+  },
+  {
+   "fieldname": "column_break_51",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "evaluation_note",
+   "fieldtype": "Small Text",
+   "hidden": 1,
+   "in_filter": 1,
+   "label": "\u0645\u0644\u0627\u062d\u0638\u0627\u062a \u0644\u0644\u0645\u0631\u0627\u062c\u0639\u0629"
+  },
+  {
+   "bold": 1,
+   "collapsible": 1,
+   "fieldname": "service_section",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "\u0627\u0644\u062e\u062f\u0645\u0627\u062a"
+  },
+  {
+   "fieldname": "contract_status",
+   "fieldtype": "Read Only",
+   "label": "\u062d\u0627\u0644\u0629 \u0627\u0644\u0639\u0642\u062f"
+  },
+  {
+   "fieldname": "choice_contracted",
+   "fieldtype": "Read Only",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "\u0631\u0642\u0645 \u0627\u0644\u062e\u064a\u0627\u0631 \u0627\u0644\u0645\u062a\u0639\u0627\u0642\u062f \u0639\u0644\u064a\u0629"
+  },
+  {
+   "fieldname": "area_contracted",
+   "fieldtype": "Read Only",
+   "hidden": 1,
+   "label": "\u0627\u0644\u0645\u0633\u0627\u062d\u0647  \u0627\u0644\u0645\u062a\u0639\u0627\u0642\u062f \u0639\u0644\u064a\u0647\u0627"
+  },
+  {
+   "fieldname": "road_to_site_ready",
+   "fieldtype": "Read Only",
+   "hidden": 1,
+   "label": "\u062c\u0627\u0647\u0632\u064a\u0629 \u0627\u0644\u0637\u0631\u064a\u0642 \u0644\u0644\u0645\u0648\u0642\u0639"
+  },
+  {
+   "fieldname": "elect_generator_place",
+   "fieldtype": "Read Only",
+   "hidden": 1,
+   "label": "\u0645\u0643\u0627\u0646 \u0627\u0644\u0645\u0648\u0644\u062f"
+  },
+  {
+   "fieldname": "elect_generator_area",
+   "fieldtype": "Read Only",
+   "hidden": 1,
+   "label": "\u0627\u0644\u0645\u0633\u0627\u062d\u0629 \u0627\u0644\u0645\u062a\u0648\u0641\u0631\u0629 \u0644\u0644\u0645\u0648\u0644\u062f"
+  },
+  {
+   "fieldname": "contract_failed_reason",
+   "fieldtype": "Read Only",
+   "hidden": 1,
+   "label": "\u0633\u0628\u0628 \u0641\u0634\u0644 \u0627\u0644\u062a\u0641\u0627\u0648\u0636"
+  },
+  {
+   "fieldname": "column_break_23",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "owner_name",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "\u0625\u0633\u0645 \u0627\u0644\u0645\u0627\u0644\u0643"
+  },
+  {
+   "fieldname": "owner_phone",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "label": "\u0631\u0642\u0645 \u0627\u0644\u0645\u0627\u0644\u0643"
+  },
+  {
+   "fieldname": "owner_address",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "label": "\u0639\u0646\u0648\u0627\u0646 \u0627\u0644\u0645\u0627\u0644\u0643"
+  },
+  {
+   "fieldname": "general_elect_available",
+   "fieldtype": "Read Only",
+   "hidden": 1,
+   "label": "\u062a\u0648\u0641\u0631 \u0643\u0647\u0631\u0628\u0627\u0621 \u0639\u0645\u0648\u0645\u064a\u0629 "
+  },
+  {
+   "fieldname": "elect_off_time",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "\u0639\u062f\u062f \u0633\u0627\u0639\u0627\u062a \u0627\u0644\u0627\u0646\u0637\u0641\u0627\u0621"
+  },
+  {
+   "fieldname": "column_break_27",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "contract_by",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "label": "\u0625\u0633\u0645 \u0627\u0644\u0645\u062a\u0639\u0627\u0642\u062f",
+   "options": "contractor"
+  },
+  {
+   "fieldname": "contracted_by_phone",
+   "fieldtype": "Read Only",
+   "label": "\u0631\u0642\u0645 \u0627\u0644\u0645\u062a\u0639\u0627\u0642\u062f"
+  },
+  {
+   "fieldname": "contract_date",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "label": "\u062a\u0627\u0631\u064a\u062e \u0627\u0644\u062a\u0639\u0627\u0642\u062f"
+  },
+  {
+   "fieldname": "contract_note",
+   "fieldtype": "Read Only",
+   "label": "\u0645\u0644\u0627\u062d\u0638\u0629 \u0627\u0644\u0645\u062a\u0639\u0627\u0642\u062f"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "sec_brk_construction",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "\u0627\u0644\u0645\u0634\u0627\u0631\u064a\u0639"
+  },
+  {
+   "fieldname": "constr_site_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "\u062d\u0627\u0644\u0629 \u0627\u0644\u0645\u0648\u0642\u0639 \u0641\u064a \u0627\u0644\u0645\u0634\u0627\u0631\u064a\u0639",
+   "options": "\n\u062c\u0627\u0631\u064a \u0627\u0639\u062f\u0627\u062f \u0627\u0644\u0648\u062b\u064a\u0642\u0629\n\u062a\u0645 \u0627\u0644\u062a\u0633\u0644\u064a\u0645 \u0644\u0644\u0645\u0642\u0627\u0648\u0644\n\u062c\u0627\u0647\u0632 \u0645\u062f\u0646\u064a\u0627\n\u062c\u0627\u0647\u0632 \u0641\u0646\u064a\u0627\n\u062a\u0639\u0631\u0642\u0644 \u0628\u0633\u0628\u0628 \u0645\u0634\u0627\u0643\u0644"
+  },
+  {
+   "fieldname": "miqawil_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "\u0627\u0633\u0645 \u0627\u0644\u0645\u0642\u0627\u0648\u0644"
+  },
+  {
+   "fieldname": "civil_problem_detailes",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "\u062a\u0641\u0627\u0635\u064a\u0644 \u0627\u0644\u0627\u0634\u0643\u0627\u0644\u064a\u0629"
+  },
+  {
+   "fieldname": "civil_clmn_brk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "civil_notes",
+   "fieldtype": "Small Text",
+   "label": "\u0645\u0644\u0627\u062d\u0638\u0627\u062a \u0627\u0644\u0645\u0634\u0627\u0631\u064a\u0639"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "concat_section",
+   "fieldtype": "Section Break",
+   "label": "Concatinate"
+  },
+  {
+   "fieldname": "azimuth_concat",
+   "fieldtype": "Data",
+   "label": "azimuth_concat"
+  },
+  {
+   "fieldname": "tilt_concat",
+   "fieldtype": "Data",
+   "label": "tilt_concat"
+  },
+  {
+   "fieldname": "antenna_height_concat",
+   "fieldtype": "Data",
+   "label": "antenna_height_concat"
+  },
+  {
+   "fieldname": "antenna_hbw_concat",
+   "fieldtype": "Data",
+   "label": "antenna_hbw_concat"
+  },
+  {
+   "fieldname": "antenna_vbw_concat",
+   "fieldtype": "Data",
+   "label": "antenna_vbw_concat"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "ext_section",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "\u0628\u064a\u0627\u0646\u0627\u062a \u0625\u0636\u0627\u0641\u064a\u0629 "
+  },
+  {
+   "fieldname": "is_replaced",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "\u0647\u0644 \u062a\u0645 \u0645\u0633\u062d \u0628\u062f\u064a\u0644 \u0644\u0647\u0630\u0627 \u0627\u0644\u0645\u0648\u0642\u0639",
+   "options": "\nYes",
+   "read_only": 1
+  },
+  {
+   "fieldname": "clmn__brr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "No",
+   "fieldname": "is_launched",
+   "fieldtype": "Select",
+   "label": "\u0647\u0644 \u062f\u062e\u0644 \u0627\u0644\u062e\u062f\u0645\u0629\u061f",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "launch_date",
+   "fieldtype": "Date",
+   "label": "\u062a\u0627\u0631\u064a\u062e \u062f\u062e\u0648\u0644 \u0627\u0644\u062e\u062f\u0645\u0629"
+  },
+  {
+   "fieldname": "ccclmnbrk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "plan_year",
+   "fieldtype": "Select",
+   "label": "\u0627\u0644\u062e\u0637\u0629 \u0627\u0644\u0633\u0646\u0648\u064a\u0629",
+   "options": "\n2022\n2021\n2020\n2019\n2018\n2017"
+  },
+  {
+   "fieldname": "plan_quarter",
+   "fieldtype": "Select",
+   "label": "\u0627\u0644\u062e\u0637\u0629 \u0627\u0644\u0631\u0628\u0639\u064a\u0629",
+   "options": "\n\u0627\u0644\u0631\u0628\u0639 \u0627\u0644\u0627\u0648\u0644\n\u0627\u0644\u0631\u0628\u0639 \u0627\u0644\u062b\u0627\u0646\u064a\n\u0627\u0644\u0631\u0628\u0639 \u0627\u0644\u062b\u0627\u0644\u062b\n\u0627\u0644\u0631\u0628\u0639 \u0627\u0644\u0631\u0627\u0628\u0639"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-02-20 18:16:56.732118",
+ "modified_by": "Administrator",
+ "module": "planning app",
+ "name": "SurveySites2",
+ "name_case": "Title Case",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "ServicesRole",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "site_name,site_name_arabic",
+ "show_name_in_global_search": 1,
+ "show_preview_popup": 1,
+ "sort_field": "modified",
+ "sort_order": "ASC",
+ "title_field": "site_name",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

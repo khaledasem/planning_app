@@ -1,0 +1,70 @@
+{
+ "actions": [],
+ "autoname": "field:name1",
+ "creation": "2021-11-30 00:01:22.783876",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "server_call_apis",
+  "dialog_apis",
+  "test_add_value_js",
+  "rest_api"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name",
+   "unique": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "server_call_apis",
+   "fieldtype": "Check",
+   "label": "Server Call APIs"
+  },
+  {
+   "default": "0",
+   "fieldname": "dialog_apis",
+   "fieldtype": "Check",
+   "label": "Dialog APIs"
+  },
+  {
+   "fieldname": "test_add_value_js",
+   "fieldtype": "Data",
+   "label": "test add value JS"
+  },
+  {
+   "default": "0",
+   "fieldname": "rest_api",
+   "fieldtype": "Check",
+   "label": "REST API"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-02-20 18:20:54.863469",
+ "modified_by": "Administrator",
+ "module": "planning app",
+ "name": "learn_api",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

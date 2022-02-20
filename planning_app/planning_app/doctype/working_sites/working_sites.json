@@ -1,0 +1,508 @@
+{
+ "actions": [],
+ "autoname": "field:site_name",
+ "creation": "2021-12-01 19:13:20.446084",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "from_survey_sites",
+  "clmn_brk_4",
+  "survey_site_name",
+  "sec__0",
+  "site_name",
+  "site_name_arabic",
+  "site_code",
+  "bts_vendor",
+  "bts_type",
+  "column_break_3",
+  "longitude",
+  "latitude",
+  "altitude",
+  "cell_type",
+  "column_break_8",
+  "bts_id",
+  "cell_id",
+  "do_cell_id",
+  "cell_idhex",
+  "column_break_23",
+  "frequency",
+  "bts_1x_cfg",
+  "bts_ev_do_cfg",
+  "bts_status",
+  "section_break_19",
+  "bsc_name",
+  "column_break_22",
+  "bsc_ip_address",
+  "column_break_24",
+  "mgw",
+  "clmnbr",
+  "msc_name",
+  "column_break_28",
+  "msc_id",
+  "sec_brk_subsystem",
+  "e1_1x_evdo",
+  "clmn_brk_",
+  "subrack_no",
+  "clmn_brk1",
+  "spuo_slot_no",
+  "clmn_brk2",
+  "spuo_subsystem_no",
+  "clmn_brk3",
+  "1x_sub_slot_sub",
+  "clmn_brk4",
+  "do_subsysytem",
+  "location_section",
+  "city",
+  "column_break_36",
+  "district",
+  "column_break_37",
+  "area_name",
+  "clmn_brk",
+  "zone",
+  "clmn_brm_1",
+  "lac",
+  "column_break_40",
+  "lacdec",
+  "host_section",
+  "1x_sevice_host_bsc",
+  "evdo_sevice_host_bsc",
+  "column_break_26",
+  "1x_sevice_spc",
+  "evdo_sevice_spc",
+  "column_break_29",
+  "1x_sevice_host_msc_name",
+  "evdo_sevice_host_msc_name",
+  "column_break_32",
+  "1x_sevice_host_msc_id",
+  "evdo_sevice_host_msc_id",
+  "section_break_51",
+  "evdo_carrier_protocol_version",
+  "column_break_53",
+  "colorcode",
+  "column_break_55",
+  "packet_zone_id",
+  "additional_info_section",
+  "first_launch_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "from_survey_sites",
+   "fieldtype": "Select",
+   "label": "From Survey Sites?",
+   "options": "\nYes"
+  },
+  {
+   "fieldname": "clmn_brk_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "from_survey_sites",
+   "fieldname": "survey_site_name",
+   "fieldtype": "Link",
+   "label": "Survey Site Name",
+   "options": "SurveySites2"
+  },
+  {
+   "fieldname": "sec__0",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "site_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Site Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "site_name_arabic",
+   "fieldtype": "Data",
+   "label": "Site Name Arabic"
+  },
+  {
+   "fieldname": "site_code",
+   "fieldtype": "Data",
+   "label": "Site Code"
+  },
+  {
+   "fieldname": "bts_vendor",
+   "fieldtype": "Select",
+   "label": "BTS Vendor",
+   "options": "\nHUAWIE\nZTE"
+  },
+  {
+   "depends_on": "bts_vendor",
+   "fieldname": "bts_type",
+   "fieldtype": "Link",
+   "label": "BTS Type",
+   "options": "BTS_Types"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "longitude",
+   "fieldtype": "Data",
+   "label": "LONGITUDE"
+  },
+  {
+   "fieldname": "latitude",
+   "fieldtype": "Data",
+   "label": "LATITUDE"
+  },
+  {
+   "fieldname": "altitude",
+   "fieldtype": "Data",
+   "label": "Altitude"
+  },
+  {
+   "fieldname": "cell_type",
+   "fieldtype": "Select",
+   "label": "Cell Type",
+   "options": "\nUrban\nSuburban\nRural\nIndoor"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bts_id",
+   "fieldtype": "Int",
+   "label": "BTS ID"
+  },
+  {
+   "fieldname": "cell_id",
+   "fieldtype": "Int",
+   "label": "Cell ID"
+  },
+  {
+   "fieldname": "do_cell_id",
+   "fieldtype": "Int",
+   "label": "Do Cell ID"
+  },
+  {
+   "fieldname": "cell_idhex",
+   "fieldtype": "Data",
+   "label": "Cell ID(hex)"
+  },
+  {
+   "fieldname": "column_break_23",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "800 MHz",
+   "fieldname": "frequency",
+   "fieldtype": "Select",
+   "label": "Frequency",
+   "options": "800 MHz\n1800 MHz\n800&1800 MHz"
+  },
+  {
+   "fieldname": "bts_1x_cfg",
+   "fieldtype": "Data",
+   "label": "BTS_1X_CFG"
+  },
+  {
+   "fieldname": "bts_ev_do_cfg",
+   "fieldtype": "Data",
+   "label": "BTS_EV DO_CFG"
+  },
+  {
+   "fieldname": "bts_status",
+   "fieldtype": "Select",
+   "label": "BTS Status",
+   "options": "\nOn Air\nDown"
+  },
+  {
+   "fieldname": "section_break_19",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "bsc_name",
+   "fieldtype": "Link",
+   "label": " BSC Name",
+   "options": "BSCs"
+  },
+  {
+   "fieldname": "column_break_22",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bsc_ip_address",
+   "fieldtype": "Read Only",
+   "hidden": 1,
+   "label": " BSC IP Address"
+  },
+  {
+   "fieldname": "column_break_24",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mgw",
+   "fieldtype": "Read Only",
+   "hidden": 1,
+   "label": "MGW"
+  },
+  {
+   "fieldname": "clmnbr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "msc_name",
+   "fieldtype": "Read Only",
+   "label": "MSC"
+  },
+  {
+   "fieldname": "column_break_28",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "msc_id",
+   "fieldtype": "Read Only",
+   "hidden": 1,
+   "label": "MSC ID"
+  },
+  {
+   "fieldname": "sec_brk_subsystem",
+   "fieldtype": "Section Break",
+   "label": "Sub Sysytem"
+  },
+  {
+   "fieldname": "e1_1x_evdo",
+   "fieldtype": "Data",
+   "label": "E1 (1X_EVDO)"
+  },
+  {
+   "fieldname": "clmn_brk_",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "subrack_no",
+   "fieldtype": "Data",
+   "label": "Subrack No."
+  },
+  {
+   "fieldname": "clmn_brk1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "spuo_slot_no",
+   "fieldtype": "Data",
+   "label": "SPUO Slot No."
+  },
+  {
+   "fieldname": "clmn_brk2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "spuo_subsystem_no",
+   "fieldtype": "Data",
+   "label": "SPUO Subsystem No."
+  },
+  {
+   "fieldname": "clmn_brk3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "1x_sub_slot_sub",
+   "fieldtype": "Data",
+   "label": "1x_SUB_Slot_SUB"
+  },
+  {
+   "fieldname": "clmn_brk4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "do_subsysytem",
+   "fieldtype": "Data",
+   "label": "Do_SubSysytem"
+  },
+  {
+   "fieldname": "location_section",
+   "fieldtype": "Section Break",
+   "label": "Location"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Link",
+   "label": "City",
+   "options": "govern1"
+  },
+  {
+   "fieldname": "column_break_36",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "city",
+   "fieldname": "district",
+   "fieldtype": "Link",
+   "label": "District",
+   "options": "Modiriat"
+  },
+  {
+   "fieldname": "column_break_37",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "city",
+   "fieldname": "area_name",
+   "fieldtype": "Data",
+   "label": "Area"
+  },
+  {
+   "fieldname": "clmn_brk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "zone",
+   "fieldtype": "Read Only",
+   "label": "Zone"
+  },
+  {
+   "fieldname": "clmn_brm_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "lac",
+   "fieldtype": "Data",
+   "label": "LAC"
+  },
+  {
+   "fieldname": "column_break_40",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "lacdec",
+   "fieldtype": "Data",
+   "label": "LAC(dec)"
+  },
+  {
+   "fieldname": "host_section",
+   "fieldtype": "Section Break",
+   "label": "Host"
+  },
+  {
+   "fieldname": "1x_sevice_host_bsc",
+   "fieldtype": "Link",
+   "label": "1X Sevice Host BSC",
+   "options": "BSCs"
+  },
+  {
+   "fieldname": "evdo_sevice_host_bsc",
+   "fieldtype": "Link",
+   "label": "EVDO Sevice Host BSC",
+   "options": "BSCs"
+  },
+  {
+   "fieldname": "column_break_26",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "1x_sevice_host_bsc",
+   "fieldname": "1x_sevice_spc",
+   "fieldtype": "Data",
+   "label": "1X Sevice SPC"
+  },
+  {
+   "depends_on": "evdo_sevice_host_bsc",
+   "fieldname": "evdo_sevice_spc",
+   "fieldtype": "Data",
+   "label": "EVDO Sevice SPC"
+  },
+  {
+   "fieldname": "column_break_29",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "1x_sevice_host_bsc",
+   "fieldname": "1x_sevice_host_msc_name",
+   "fieldtype": "Data",
+   "label": "1X Sevice Host MSC Name"
+  },
+  {
+   "depends_on": "evdo_sevice_host_bsc",
+   "fieldname": "evdo_sevice_host_msc_name",
+   "fieldtype": "Data",
+   "label": "EVDO Sevice Host MSC Name"
+  },
+  {
+   "fieldname": "column_break_32",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "1x_sevice_host_bsc",
+   "fieldname": "1x_sevice_host_msc_id",
+   "fieldtype": "Data",
+   "label": "1X Sevice Host MSC ID"
+  },
+  {
+   "depends_on": "evdo_sevice_host_bsc",
+   "fieldname": "evdo_sevice_host_msc_id",
+   "fieldtype": "Data",
+   "label": "EVDO Sevice Host MSC ID"
+  },
+  {
+   "fieldname": "section_break_51",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "EV-DO Revision A",
+   "fieldname": "evdo_carrier_protocol_version",
+   "fieldtype": "Data",
+   "label": "EVDO Carrier Protocol Version"
+  },
+  {
+   "fieldname": "column_break_53",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "colorcode",
+   "fieldtype": "Data",
+   "label": "ColorCode"
+  },
+  {
+   "fieldname": "column_break_55",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "packet_zone_id",
+   "fieldtype": "Data",
+   "label": "Packet Zone ID"
+  },
+  {
+   "fieldname": "additional_info_section",
+   "fieldtype": "Section Break",
+   "label": "Additional Info"
+  },
+  {
+   "fieldname": "first_launch_date",
+   "fieldtype": "Date",
+   "label": "First launch date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-02-20 19:23:16.862262",
+ "modified_by": "Administrator",
+ "module": "planning app",
+ "name": "Working Sites",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

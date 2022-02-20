@@ -1,0 +1,308 @@
+{
+ "actions": [],
+ "autoname": "field:sector_name",
+ "creation": "2022-01-19 22:20:53.691513",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "site_name",
+  "clmn_brk_1",
+  "site_name_arabic",
+  "clmn_brk_2",
+  "city",
+  "section_break_6",
+  "number_of_current_sectors",
+  "clmn_brk3_column",
+  "new_sector_no",
+  "clmn_brk4_column",
+  "sector_name",
+  "azimuth_suggestion_section",
+  "azimuth_sec0",
+  "colmn_brk_az0",
+  "azimuth_sec1",
+  "colmn_brk_az1",
+  "azimuth_sec2",
+  "colmn_brk_az2",
+  "azimuth_sec3",
+  "tilt_suggestion_section",
+  "tilt_sec0",
+  "colmn_brk_tilt0",
+  "tilt_sec1",
+  "colmn_brk_tilt1",
+  "tilt_sec2",
+  "colmn_brk_tilt2",
+  "tilt_sec3",
+  "1x_configuration_section",
+  "1x_sec0",
+  "colmn_brk_1x_0",
+  "1x_sec1",
+  "colmn_brk_1x_2",
+  "1x_sec2",
+  "colmn_brk_1x_3",
+  "1x_sec3",
+  "do_configuration_section",
+  "do_sec0",
+  "colmn_brk_do_0",
+  "do_sec1",
+  "colmn_brk_do_1",
+  "do_sec2",
+  "colmn_brk_do_2",
+  "do_sec3",
+  "order_reason_section",
+  "reason",
+  "order_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "site_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Site Name",
+   "options": "Working Sites",
+   "reqd": 1
+  },
+  {
+   "fieldname": "clmn_brk_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "site_name_arabic",
+   "fieldtype": "Read Only",
+   "label": "\u0627\u0633\u0645 \u0627\u0644\u0645\u0648\u0642\u0639"
+  },
+  {
+   "fieldname": "clmn_brk_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Read Only",
+   "label": "City"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "number_of_current_sectors",
+   "fieldtype": "Read Only",
+   "label": "number of current sectors"
+  },
+  {
+   "fieldname": "clmn_brk3_column",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "new_sector_no",
+   "fieldtype": "Read Only",
+   "label": "New Sector No."
+  },
+  {
+   "fieldname": "clmn_brk4_column",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sector_name",
+   "fieldtype": "Read Only",
+   "label": "Sector Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "azimuth_suggestion_section",
+   "fieldtype": "Section Break",
+   "label": "Azimuth "
+  },
+  {
+   "fieldname": "azimuth_sec0",
+   "fieldtype": "Data",
+   "label": "Azimuth (Sec0)"
+  },
+  {
+   "fieldname": "colmn_brk_az0",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "azimuth_sec1",
+   "fieldtype": "Data",
+   "label": "Azimuth (Sec1)"
+  },
+  {
+   "fieldname": "colmn_brk_az1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "azimuth_sec2",
+   "fieldtype": "Data",
+   "label": "Azimuth (Sec2)"
+  },
+  {
+   "fieldname": "colmn_brk_az2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "azimuth_sec3",
+   "fieldtype": "Data",
+   "label": "Azimuth (Sec3)"
+  },
+  {
+   "fieldname": "tilt_suggestion_section",
+   "fieldtype": "Section Break",
+   "label": "Tilt"
+  },
+  {
+   "fieldname": "tilt_sec0",
+   "fieldtype": "Data",
+   "label": "Tilt (Sec0)"
+  },
+  {
+   "fieldname": "colmn_brk_tilt0",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tilt_sec1",
+   "fieldtype": "Data",
+   "label": "Tilt (Sec1)"
+  },
+  {
+   "fieldname": "colmn_brk_tilt1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tilt_sec2",
+   "fieldtype": "Data",
+   "label": "Tilt (Sec2)"
+  },
+  {
+   "fieldname": "colmn_brk_tilt2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tilt_sec3",
+   "fieldtype": "Data",
+   "label": "Tilt (Sec3)"
+  },
+  {
+   "fieldname": "1x_configuration_section",
+   "fieldtype": "Section Break",
+   "label": "1x Configuration"
+  },
+  {
+   "fieldname": "1x_sec0",
+   "fieldtype": "Select",
+   "label": "Sec 0 ",
+   "options": "\n1\n2\n3\n4\n5\n6"
+  },
+  {
+   "fieldname": "colmn_brk_1x_0",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "1x_sec1",
+   "fieldtype": "Select",
+   "label": "Sec 1",
+   "options": "\n1\n2\n3\n4\n5\n6"
+  },
+  {
+   "fieldname": "colmn_brk_1x_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "1x_sec2",
+   "fieldtype": "Select",
+   "label": "Sec 2",
+   "options": "\n1\n2\n3\n4\n5\n6"
+  },
+  {
+   "fieldname": "colmn_brk_1x_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "1x_sec3",
+   "fieldtype": "Select",
+   "label": "Sec 3",
+   "options": "\n1\n2\n3\n4\n5\n6"
+  },
+  {
+   "fieldname": "do_configuration_section",
+   "fieldtype": "Section Break",
+   "label": "DO Configuration"
+  },
+  {
+   "fieldname": "do_sec0",
+   "fieldtype": "Select",
+   "label": "Sec 0",
+   "options": "\n1\n2\n3\n4\n5\n6"
+  },
+  {
+   "fieldname": "colmn_brk_do_0",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "do_sec1",
+   "fieldtype": "Select",
+   "label": "Sec 1",
+   "options": "\n1\n2\n3\n4\n5\n6"
+  },
+  {
+   "fieldname": "colmn_brk_do_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "do_sec2",
+   "fieldtype": "Select",
+   "label": "Sec 2",
+   "options": "\n1\n2\n3\n4\n5\n6"
+  },
+  {
+   "fieldname": "colmn_brk_do_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "do_sec3",
+   "fieldtype": "Select",
+   "label": "Sec 3",
+   "options": "\n1\n2\n3\n4\n5\n6"
+  },
+  {
+   "fieldname": "order_reason_section",
+   "fieldtype": "Section Break",
+   "label": "Order Reason"
+  },
+  {
+   "fieldname": "reason",
+   "fieldtype": "Small Text",
+   "label": "reason"
+  },
+  {
+   "default": "Today",
+   "fieldname": "order_date",
+   "fieldtype": "Date",
+   "label": "Order Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-02-20 19:24:06.339565",
+ "modified_by": "Administrator",
+ "module": "planning app",
+ "name": "New_Sector_order",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

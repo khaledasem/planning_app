@@ -1,0 +1,14 @@
+<Folder xmlns="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:gx="http://www.google.com/kml/ext/2.2">
+  <Placemark>
+    <name>Hello World!</name>
+    <Point>
+      <coordinates>-64.5253,18.4607</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Hello World!</name>
+    <Point>
+      <coordinates>-64.51118,18.4111197</coordinates>
+    </Point>
+  </Placemark>
+</Folder>

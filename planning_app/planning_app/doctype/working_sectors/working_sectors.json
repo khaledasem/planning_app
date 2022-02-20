@@ -1,0 +1,382 @@
+{
+ "actions": [],
+ "autoname": "field:sector_name",
+ "creation": "2021-12-01 20:25:33.258067",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "site_name",
+  "clnm",
+  "sector_id",
+  "section_break_2",
+  "sector_name",
+  "bts_id_sector_id",
+  "column_break_2",
+  "cell_id_sector_id",
+  "column_break_4",
+  "base_id",
+  "cell_id_sector_idhex",
+  "column_break_6",
+  "site_name_sector_id",
+  "cell_id_sector_iddec",
+  "section_break_12",
+  "support_type",
+  "azimuth",
+  "column_break_14",
+  "support_heightm",
+  "mechanical_tilt",
+  "column_break_16",
+  "antenna_heightm",
+  "electrical_tilt",
+  "column_break_18",
+  "sector_radius",
+  "total_tilt",
+  "antenna_info_section",
+  "antenna_vendor",
+  "antenna_model",
+  "column_break_26",
+  "antenna_hor_beamwidh",
+  "antenna_ver_beamwidh",
+  "column_break_30",
+  "antenna_gaindbi",
+  "electric_tilt",
+  "section_break_27",
+  "pseudo_noise_code",
+  "pn_group",
+  "column_break_15",
+  "total_no_of_pch",
+  "no_of_hashing",
+  "column_break_17",
+  "data_16",
+  "no_of_do_carriersec",
+  "gci",
+  "sector_kpi_section",
+  "walsh_trafficfch_sch",
+  "column_break_45",
+  "walsh_traffic_packet_fch",
+  "column_break_47",
+  "handoff",
+  "atoll_section",
+  "height_atoll",
+  "clmn_brk_radius",
+  "main_radius",
+  "extended_radius",
+  "clmn_brk_resolution",
+  "main_resolution",
+  "extended_resolution"
+ ],
+ "fields": [
+  {
+   "fieldname": "site_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Site Name",
+   "options": "Working Sites"
+  },
+  {
+   "fieldname": "clnm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sector_id",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Sector ID",
+   "options": "\n0\n1\n2\n3"
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sector_name",
+   "fieldtype": "Data",
+   "label": "Sector Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "bts_id_sector_id",
+   "fieldtype": "Data",
+   "label": "BTS ID_Sector ID"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cell_id_sector_id",
+   "fieldtype": "Data",
+   "label": "Cell ID_Sector ID"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "base_id",
+   "fieldtype": "Data",
+   "label": "Base ID"
+  },
+  {
+   "fieldname": "cell_id_sector_idhex",
+   "fieldtype": "Data",
+   "label": "Cell ID_Sector ID(hex)"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "site_name_sector_id",
+   "fieldtype": "Data",
+   "label": "Site Name_Sector ID"
+  },
+  {
+   "fieldname": "cell_id_sector_iddec",
+   "fieldtype": "Data",
+   "label": "Cell ID_Sector ID(dec)"
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "support_type",
+   "fieldtype": "Select",
+   "label": "Support Type",
+   "options": "\nTower\nPole\nRooms+Pole\nSharing"
+  },
+  {
+   "fieldname": "azimuth",
+   "fieldtype": "Int",
+   "label": "Azimuth"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "support_heightm",
+   "fieldtype": "Int",
+   "label": "Support Height(m)"
+  },
+  {
+   "fieldname": "mechanical_tilt",
+   "fieldtype": "Float",
+   "label": "Mechanical Tilt"
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "antenna_heightm",
+   "fieldtype": "Int",
+   "label": "Antenna Height(m)"
+  },
+  {
+   "fieldname": "electrical_tilt",
+   "fieldtype": "Float",
+   "label": "Electrical Tilt"
+  },
+  {
+   "fieldname": "column_break_18",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sector_radius",
+   "fieldtype": "Int",
+   "label": "Sector Radius (m)"
+  },
+  {
+   "fieldname": "total_tilt",
+   "fieldtype": "Float",
+   "label": "Total Tilt"
+  },
+  {
+   "fieldname": "antenna_info_section",
+   "fieldtype": "Section Break",
+   "label": "Antenna Info"
+  },
+  {
+   "fieldname": "antenna_vendor",
+   "fieldtype": "Select",
+   "label": "Antenna Vendor",
+   "options": "\nHuawei\nKathrein\nAgisson\nTongyu\nAmphenol\nUnknown"
+  },
+  {
+   "fieldname": "antenna_model",
+   "fieldtype": "Link",
+   "label": "Antenna Model",
+   "options": "Antenna"
+  },
+  {
+   "fieldname": "column_break_26",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "antenna_hor_beamwidh",
+   "fieldtype": "Data",
+   "label": "Antenna HOR Beamwidh"
+  },
+  {
+   "fieldname": "antenna_ver_beamwidh",
+   "fieldtype": "Data",
+   "label": "Antenna VER Beamwidh"
+  },
+  {
+   "fieldname": "column_break_30",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "antenna_gaindbi",
+   "fieldtype": "Data",
+   "label": "Antenna Gain(dBi)"
+  },
+  {
+   "fieldname": "electric_tilt",
+   "fieldtype": "Data",
+   "label": "Electric Tilt"
+  },
+  {
+   "fieldname": "section_break_27",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "pseudo_noise_code",
+   "fieldtype": "Data",
+   "label": "Pseudo Noise Code"
+  },
+  {
+   "fieldname": "pn_group",
+   "fieldtype": "Data",
+   "label": "PN Group"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_no_of_pch",
+   "fieldtype": "Data",
+   "label": "Total No of PCH"
+  },
+  {
+   "fieldname": "no_of_hashing",
+   "fieldtype": "Data",
+   "label": "No of hashing"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "data_16",
+   "fieldtype": "Select",
+   "label": "NO_OF_1X_CARRIER/SEC",
+   "options": "\n1\n2\n3\n4\n5\n6"
+  },
+  {
+   "fieldname": "no_of_do_carriersec",
+   "fieldtype": "Select",
+   "label": "NO_OF_DO_CARRIER/SEC",
+   "options": "\n1\n2\n3\n4\n5\n6"
+  },
+  {
+   "fieldname": "gci",
+   "fieldtype": "Data",
+   "label": "GCI"
+  },
+  {
+   "fieldname": "sector_kpi_section",
+   "fieldtype": "Section Break",
+   "label": "Sector KPI"
+  },
+  {
+   "fieldname": "walsh_trafficfch_sch",
+   "fieldtype": "Float",
+   "label": "Walsh Traffic (FCH_SCH)"
+  },
+  {
+   "fieldname": "column_break_45",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "walsh_traffic_packet_fch",
+   "fieldtype": "Float",
+   "label": "WALSH Traffic (Packet_FCH)"
+  },
+  {
+   "fieldname": "column_break_47",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "handoff",
+   "fieldtype": "Float",
+   "label": "HandOff"
+  },
+  {
+   "fieldname": "atoll_section",
+   "fieldtype": "Section Break",
+   "label": "Atoll"
+  },
+  {
+   "fieldname": "height_atoll",
+   "fieldtype": "Data",
+   "label": "Height (Atoll)"
+  },
+  {
+   "fieldname": "clmn_brk_radius",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "main_radius",
+   "fieldtype": "Data",
+   "label": "Main Radius"
+  },
+  {
+   "fieldname": "extended_radius",
+   "fieldtype": "Data",
+   "label": "Extended Radius"
+  },
+  {
+   "fieldname": "clmn_brk_resolution",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "main_resolution",
+   "fieldtype": "Data",
+   "label": "Main Resolution"
+  },
+  {
+   "fieldname": "extended_resolution",
+   "fieldtype": "Data",
+   "label": "Extended Resolution"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-02-20 19:22:55.245503",
+ "modified_by": "Administrator",
+ "module": "planning app",
+ "name": "Working_Sectors",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
