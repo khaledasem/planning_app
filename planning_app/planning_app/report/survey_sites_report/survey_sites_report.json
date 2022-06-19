@@ -7,10 +7,10 @@
  "docstatus": 0,
  "doctype": "Report",
  "filters": [],
- "idx": 0,
+ "idx": 2,
  "is_standard": "Yes",
  "json": "{}",
- "modified": "2022-02-20 19:02:36.445519",
+ "modified": "2022-03-09 00:32:37.222936",
  "modified_by": "Administrator",
  "module": "planning app",
  "name": "Survey Sites Report",
@@ -19,5 +19,12 @@
  "ref_doctype": "SurveySites2",
  "report_name": "Survey Sites Report",
  "report_type": "Script Report",
- "roles": []
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "PlanningRole"
+  }
+ ]
 }

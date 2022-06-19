@@ -21,7 +21,6 @@ frappe.ui.form.on('SurveySites2', {
 
 
 
-
 		frm.Role_profile_function = function(frm){
 
 			var variab = ''
@@ -658,8 +657,29 @@ frappe.ui.form.on('SurveySites2', {
 		},
 
 		
-
-
+		//************************ set_query_modairat  *************************************************
+		frm.set_query_modairat = function(frm,call_from){
+			if(call_from=='onChange'){
+				frm.doc.modairiah='';
+				frm.doc.area_name='';
+				frm.refresh_field('modairiah');
+				frm.refresh_field('area_name');
+			}
+			if(frm.doc.government2){
+				frm.set_query("modairiah", function(){
+						return {
+							"filters": {
+							"government": frm.doc.government2
+							}
+						};
+					}),
+				
+				frm.refresh_field('modairiah');
+				frm.refresh_field('area_name');
+			}
+		},	
+		//************************ end *************************************************
+		
 
 
 
@@ -1110,6 +1130,9 @@ frappe.ui.form.on('SurveySites2', {
 		},
 		//************************ end antenna_type2_Onchange *************************************************
 
+
+
+
 		//************************ antenna_type3_Onchange *************************************************
 		frm.antenna_type3_Onchange = function(frm){
 			if(frm.doc.antenna_type3){
@@ -1205,6 +1228,7 @@ frappe.ui.form.on('SurveySites2', {
 		frm.antenna_type4_Onchange(frm);
 
 		frm.Another_Operators_in_Location_Onchange(frm);
+		frm.set_query_modairat(frm,'');
 	},
 	//=============================================== End Refresh =============================================================
 
@@ -1548,6 +1572,16 @@ frappe.ui.form.on('SurveySites2', {
   },
    //--------------------------------------------------------------------------------------
   
+
+		//-------------- ---------------------------------
+		government2: function(frm){
+			frm.set_query_modairat(frm,'onChange');
+
+			
+
+		},
+	   //---------------------------------------End----------------------------------------------
+
 
 
 

@@ -16,9 +16,9 @@ frappe.ui.form.on('NewSites', {
 				var variab = ''
 	 			frm.call({
 	  			method: "planning_app.planning_app.doctype.newsites.myapi.getUserInfo_api",
-	  			// args: {'name': frm.doc.government2, 'last_code': used_code_num},
+  			// args: {'name': frm.doc.government2, 'last_code': used_code_num},
 	  			callback: function(r) {
-		  				
+	  			
 
 			  		// frm.doc.engineer_name =  r.message[0][0]
 			  		// frm.doc.engineer_phone =  r.message[0][1]
@@ -168,6 +168,128 @@ frappe.ui.form.on('NewSites', {
 	  	})
 		},
 
+		frm.generate_survey_code = function(frm){
+			if (frm.doc.government2) {
+		  		frappe.call({
+		  		method: "planning_app.planning_app.doctype.newsites.myapi.get_government_info",
+		  		args: {'city': frm.doc.government2},
+		  		callback: function(r) {
+		  			console.log(r)
+		  			if(r.message.length>0){
+		  				if(frm.doc.survey_type == 'موقع جديد')
+		  				{
+		  					let city_code = r.message[0].code;
+		  					let last_code = r.message[0].last_code;
+		  					let used_code_num = Number(last_code) + 1;
+		  					let used_code= city_code + used_code_num + '-1';
+		  					frm.doc.survey_code = used_code;
+		  					frm.refresh_field('survey_code');
+		  					frm.refresh_field('name');
+		  					// frm.doc.name = used_code;
+
+		  					frm.call({
+		  						method: "planning_app.planning_app.doctype.newsites.myapi.set_last_code",
+		  						args: {'name': frm.doc.government2, 'last_code': used_code_num},
+		  						callback: function(r) {
+		  						}
+		  					})
+		  					console.log(last_code)
+
+		  				}
+		  				else if(frm.doc.survey_type == 'بديل موقع في الخدمات'){
+		  					let str = frm.doc.old_sitename;
+		  					let curr_code = str.substring(0, 8);
+		  					let old_num = str.substring(str.length - 1);
+		  					let curr_num = Number(old_num) + 1;
+		  					let used_code= curr_code + curr_num ;
+		  					frm.doc.survey_code = used_code;
+
+
+
+		  					frappe.call({
+		  						method: "planning_app.planning_app.doctype.newsites.myapi.set_is_replaced_of_old_site",
+		  						args: {'old_sitename': frm.doc.old_sitename},
+		  						callback: function(r) {
+		  						}
+		  					})
+
+		  				}
+
+
+
+
+		  			}
+
+		  		}
+		  	})
+		  	//----------------end call----------------------------
+		  	} else{
+		  		frappe.throw('Select Government first!!!')
+		  	}
+		},
+
+
+		//************************ set_query_modairat  *************************************************
+		frm.set_query_modairat = function(frm,call_from){
+			if(call_from=='onChange'){
+				frm.doc.modairiah='';
+				frm.doc.area_name='';
+				frm.refresh_field('modairiah');
+				frm.refresh_field('area_name');
+			}
+
+			if(frm.doc.government2){
+				frm.set_query("modairiah", function(){
+						return {
+							"filters": {
+							"government": frm.doc.government2
+							}
+						}
+					})
+			}
+				
+		},	
+		//************************ end *************************************************
+		
+
+		//************************choices_colapse  *************************************************
+		frm.choices_colapse = function(frm){
+		
+			if(frm.doc.longitude1){
+				frm.set_df_property('sec_brk_choice1', 'collapsible', 0)
+				
+				// console.log('choice1')
+			} else{
+				frm.set_df_property('sec_brk_choice1', 'collapsible', 1)
+			}
+			frm.refresh_field('sec_brk_choice1');
+			
+			if(frm.doc.longitude2){
+				frm.set_df_property('sec_brk_choice2', 'collapsible', 0)
+				
+			} else{
+				frm.set_df_property('sec_brk_choice2', 'collapsible', 1)
+			}
+			frm.refresh_field('sec_brk_choice2');
+
+			if(frm.doc.longitude3){
+				frm.set_df_property('sec_brk_choice3', 'collapsible', 0)
+				
+			} else{
+				frm.set_df_property('sec_brk_choice3', 'collapsible', 1)
+			}
+			frm.refresh_field('sec_brk_choice3');
+
+			if(frm.doc.longitude4){
+				frm.set_df_property('sec_brk_choice4', 'collapsible', 0)
+				
+			} else{
+				frm.set_df_property('sec_brk_choice4', 'collapsible', 1)
+			}
+			frm.refresh_field('sec_brk_choice4');
+		},	
+		//************************ end *************************************************
+		
 		frm.share_with_other_concat = function(frm,choice_num, sharing_with_who){
 
 			if(choice_num == 1){
@@ -972,6 +1094,14 @@ frappe.ui.form.on('NewSites', {
 
 		//------ clear field of sectors-----------------------
 		frm.clear_fields_sec1 = function(frm){
+
+
+			frm.set_df_property('tower_type1', 'reqd', 0)
+			frm.set_df_property('longitude1', 'reqd', 0)
+			frm.set_df_property('latitude1', 'reqd', 0)
+			frm.set_df_property('choice_priority1', 'reqd', 0)
+			frm.set_df_property('choice_image1', 'reqd', 0)
+
 			frm.doc.tower_type1 = '';
 			frm.doc.number_of_poles1 = '';
 			frm.doc.number_of_rooms1 = '';
@@ -986,6 +1116,11 @@ frappe.ui.form.on('NewSites', {
 		},
 
 		frm.clear_fields_sec2 = function(frm){
+			frm.set_df_property('tower_type2', 'reqd', 0)
+			frm.set_df_property('longitude2', 'reqd', 0)
+			frm.set_df_property('latitude2', 'reqd', 0)
+			frm.set_df_property('choice_priority2', 'reqd', 0)
+			frm.set_df_property('choice_image2', 'reqd', 0)
 			frm.doc.tower_type2 = '';
 			frm.doc.number_of_poles2 = '';
 			frm.doc.number_of_rooms2 = '';
@@ -999,6 +1134,12 @@ frappe.ui.form.on('NewSites', {
 		},
 
 		frm.clear_fields_sec3 = function(frm){
+			frm.set_df_property('tower_type3', 'reqd', 0)
+			frm.set_df_property('longitude3', 'reqd', 0)
+			frm.set_df_property('latitude3', 'reqd', 0)
+			frm.set_df_property('choice_priority3', 'reqd', 0)
+			frm.set_df_property('choice_image3', 'reqd', 0)
+
 				frm.doc.tower_type3 = '';
 			frm.doc.number_of_poles3 = '';
 			frm.doc.number_of_rooms3 = '';
@@ -1012,6 +1153,12 @@ frappe.ui.form.on('NewSites', {
 		},
 
 		frm.clear_fields_sec4 = function(frm){
+			frm.set_df_property('tower_type4', 'reqd', 0)
+			frm.set_df_property('longitude4', 'reqd', 0)
+			frm.set_df_property('latitude4', 'reqd', 0)
+			frm.set_df_property('choice_priority4', 'reqd', 0)
+			frm.set_df_property('choice_image4', 'reqd', 0)
+
 			frm.doc.tower_type4 = '';
 			frm.doc.number_of_poles4 = '';
 			frm.doc.number_of_rooms4 = '';
@@ -1300,6 +1447,7 @@ frappe.ui.form.on('NewSites', {
 	 	frm.chech_number_of_choice(frm);
 	 	frm.show_hide_old_site_name(frm);
 	 	frm.show_hide_site_name_section(frm);
+	 	frm.choices_colapse(frm);
 	 	// frm.show_hide_engineer_info_section(frm);
 
 		//---------------------------------------End----------------------------------------------
@@ -1314,6 +1462,7 @@ frappe.ui.form.on('NewSites', {
 			
 		//---------------------end-----------------------------------------------------
 
+		frm.set_query_modairat(frm,'');
 
 
 
@@ -1327,7 +1476,9 @@ frappe.ui.form.on('NewSites', {
 	survey_type: function(frm){
 		frm.doc.old_sitename = ''
 		frm.show_hide_old_site_name(frm);
-		frm.show_hide_site_name_section(frm)
+		frm.show_hide_site_name_section(frm);
+
+		
 
 		// //----reset the fields in filter
 		// frm.doc.evaluate = '';
@@ -1568,19 +1719,7 @@ frappe.ui.form.on('NewSites', {
 
 	//-------------- ---------------------------------
 	government2: function(frm){
-		// frm.show_hide_engineer_info_section(frm)
-		frm.set_query("modairiah", function(){
-					return {
-						"filters": {
-						"government": frm.doc.government2
-						}
-					};
-				}),
-		frm.doc.modairiah=''
-		frm.doc.area_name=''
-		frm.refresh_field('modairiah');
-		frm.refresh_field('area_name');
-
+		frm.set_query_modairat(frm,'onChange');
 	},
    //---------------------------------------End----------------------------------------------
 
@@ -1986,84 +2125,30 @@ frappe.ui.form.on('NewSites', {
 	// #################### befor save #################################################
 	before_save: function(frm){
 
+		frm.doc.see_in_map = 'No'
 
-	  	frm.doc.see_in_map = 'No'
-	  	if(frm.doc.survey_code){
-	  		frm.doc.survey_code= frm.doc.name;
-	  		frm.refresh_field('survey_code')
-	  	}
-	  	if(!frm.doc.survey_code){
-		  	if (frm.doc.government2) {
-		  		frappe.call({
-		  		method: "planning_app.planning_app.doctype.newsites.myapi.get_government_info",
-		  		args: {'city': frm.doc.government2},
-		  		callback: function(r) {
-		  			console.log(r)
-		  			if(r.message.length>0){
-		  				if(frm.doc.survey_type == 'موقع جديد')
-		  				{
-		  					let city_code = r.message[0].code;
-		  					let last_code = r.message[0].last_code;
-		  					let used_code_num = Number(last_code) + 1;
-		  					let used_code= city_code + used_code_num + '-1';
-		  					frm.doc.survey_code = used_code;
+		console.log('---------------------------')
+		console.log('name:')
+		console.log(frm.doc.name)
+		console.log('code:')
+		console.log(frm.doc.survey_code)
+		console.log('---------------------------')
+		if(!frm.doc.survey_code){
+			frm.generate_survey_code(frm);
+		} else{
+			var survey_code_var = ' '
+			survey_code_var = frm.doc.survey_code;
+			var include_new = survey_code_var.includes("new");
 
-		  					frm.call({
-		  						method: "planning_app.planning_app.doctype.newsites.myapi.set_last_code",
-		  						args: {'name': frm.doc.government2, 'last_code': used_code_num},
-		  						callback: function(r) {
-		  						}
-		  					})
-		  					console.log(last_code)
-
-		  				}
-		  				else if(frm.doc.survey_type == 'بديل موقع في الخدمات'){
-		  					let str = frm.doc.old_sitename;
-		  					let curr_code = str.substring(0, 8);
-		  					let old_num = str.substring(str.length - 1);
-		  					let curr_num = Number(old_num) + 1;
-		  					let used_code= curr_code + curr_num ;
-		  					frm.doc.survey_code = used_code;
-
-
-
-		  					frappe.call({
-		  						method: "planning_app.planning_app.doctype.newsites.myapi.set_is_replaced_of_old_site",
-		  						args: {'old_sitename': frm.doc.old_sitename},
-		  						callback: function(r) {
-		  						}
-		  					})
-
-		  				}
-
-
-
-
-		  			}
-
-		  		}
-		  	})
-		  	//----------------end call----------------------------
-		  	}
-	  	}
-	  	
-	  	
-
-
-	  	//-----------------check the data type of long and lat---------------------------
-	  	// if (frm.doc.number_of_choices == '1') {
-	  	// 	console.log(typ(frm.doc.longitude1))
-	  		
-	  	// }
-	 
-	  	// else if (frm.doc.number_of_choices == '2') {
-	  	// }
-	  	// else if (frm.doc.number_of_choices == '3') {
-	  	// }
-	  	// else if (frm.doc.number_of_choices == '4') {
-	  	// }
-	  	//-------------------------------end--------------------------------------------
-	  },
+			if(include_new){
+				frm.generate_survey_code(frm);
+			} else{
+				// frm.doc.survey_code = frm.doc.name;
+			}
+		}
+		
+		
+	 },
 	// #################### end  befor save #################################################
 
 //=============================================== validate =============================================================

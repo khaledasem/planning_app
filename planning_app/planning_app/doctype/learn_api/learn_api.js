@@ -14,7 +14,7 @@ frappe.ui.form.on('learn_api', {
 	        	let doc = r.message;
 	        	// console.log(doc);
 	    	}),
-
+	    	//---------------------------------------------------------------
 
 
 
@@ -53,7 +53,10 @@ frappe.ui.form.on('learn_api', {
 			        console.log(count)
 			    })
 
+			// frappe.db.count("Employee", filters={"employment_type": ["in", ("board member", "contract")]})
+			// frappe.db.count("Employee", filters={"government": frm.doc.government2})
 
+			
 			 //------------- check exist -------------------------------
 			 frappe.db.exists('govern1', 'الحديدة')
 		    .then(exists => {

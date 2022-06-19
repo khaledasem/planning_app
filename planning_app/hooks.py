@@ -9,6 +9,8 @@ app_color = "grey"
 app_email = "khaled.asem@yemenmobile.com.ye"
 app_license = "MIT"
 
+develop_version = '1.0.1 (version-1)'
+
 # Includes in <head>
 # ------------------
 
@@ -44,7 +46,7 @@ app_license = "MIT"
 
 # website user home page (by Role)
 # role_home_page = {
-#	"Role": "home_page"
+# 	"PlanningRole": "/test2"
 # }
 
 # Generators

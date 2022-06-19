@@ -24,7 +24,7 @@ frappe.listview_settings['NewSites'] = {
             // return [__("لم يتم الافادة"), "blue", "contract_status,=,--------------"];
         
         }else if (doc.is_replaced == 'Yes') {
-            return [__("Replaced"), "blur", "is_replaced,=,Yes"];
+            return [__("Replaced"), "blue", "is_replaced,=,Yes"];
         
         
         }else if (doc.contract_status == '--------------') {

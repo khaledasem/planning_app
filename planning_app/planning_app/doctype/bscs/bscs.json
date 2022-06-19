@@ -11,7 +11,8 @@
   "msc_name",
   "msc_id",
   "mgw",
-  "vendor"
+  "vendor",
+  "spc"
  ],
  "fields": [
   {
@@ -45,11 +46,16 @@
    "fieldtype": "Select",
    "label": "Vendor",
    "options": "\nHW\nZTE"
+  },
+  {
+   "fieldname": "spc",
+   "fieldtype": "Data",
+   "label": "SPC"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-02-20 19:22:04.620006",
+ "modified": "2022-04-01 23:41:43.081588",
  "modified_by": "Administrator",
  "module": "planning app",
  "name": "BSCs",

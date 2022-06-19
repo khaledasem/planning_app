@@ -7,10 +7,10 @@
  "docstatus": 0,
  "doctype": "Report",
  "filters": [],
- "idx": 0,
+ "idx": 2,
  "is_standard": "Yes",
  "json": "{}",
- "modified": "2022-02-20 19:01:14.868379",
+ "modified": "2022-03-09 00:33:18.643550",
  "modified_by": "Administrator",
  "module": "planning app",
  "name": "NewSitesReport",
@@ -19,5 +19,12 @@
  "ref_doctype": "NewSites",
  "report_name": "NewSitesReport",
  "report_type": "Script Report",
- "roles": []
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "PlanningRole"
+  }
+ ]
 }

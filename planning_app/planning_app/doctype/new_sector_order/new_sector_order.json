@@ -7,10 +7,13 @@
  "engine": "InnoDB",
  "field_order": [
   "site_name",
-  "clmn_brk_1",
   "site_name_arabic",
-  "clmn_brk_2",
+  "clmn_brk_1",
+  "zone",
   "city",
+  "clmn_brk_2",
+  "order_number",
+  "order_date_",
   "section_break_6",
   "number_of_current_sectors",
   "clmn_brk3_column",
@@ -56,10 +59,9 @@
  "fields": [
   {
    "fieldname": "site_name",
-   "fieldtype": "Link",
+   "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Site Name",
-   "options": "Working Sites",
    "reqd": 1
   },
   {
@@ -78,7 +80,7 @@
   {
    "fieldname": "city",
    "fieldtype": "Read Only",
-   "label": "City"
+   "label": "\u0627\u0644\u0645\u062d\u0627\u0641\u0638\u0629"
   },
   {
    "fieldname": "section_break_6",
@@ -279,11 +281,27 @@
    "fieldname": "order_date",
    "fieldtype": "Date",
    "label": "Order Date"
+  },
+  {
+   "fieldname": "zone",
+   "fieldtype": "Data",
+   "label": "Zone"
+  },
+  {
+   "fieldname": "order_number",
+   "fieldtype": "Data",
+   "label": "Order Number"
+  },
+  {
+   "default": "Today",
+   "fieldname": "order_date_",
+   "fieldtype": "Date",
+   "label": "Order Date"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-02-20 19:24:06.339565",
+ "modified": "2022-02-27 23:08:22.855814",
  "modified_by": "Administrator",
  "module": "planning app",
  "name": "New_Sector_order",

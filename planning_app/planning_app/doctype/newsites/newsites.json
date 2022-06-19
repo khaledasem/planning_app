@@ -258,6 +258,7 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Survey Code",
+   "read_only": 1,
    "unique": 1
   },
   {
@@ -268,7 +269,6 @@
   },
   {
    "bold": 1,
-   "collapsible": 1,
    "fieldname": "sec_brk_choice1",
    "fieldtype": "Section Break",
    "hidden": 1,
@@ -834,7 +834,8 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "\u0647\u0644 \u062a\u0645 \u062a\u0633\u0644\u064a\u0645 \u0627\u0644\u0645\u0648\u0642\u0639",
-   "options": "\nYes\nNo"
+   "options": "\nYes\nNo",
+   "read_only": 1
   },
   {
    "fieldname": "is_replaced",
@@ -849,7 +850,7 @@
  "hide_toolbar": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-02-20 17:57:41.693793",
+ "modified": "2022-04-13 00:42:17.355497",
  "modified_by": "Administrator",
  "module": "planning app",
  "name": "NewSites",
